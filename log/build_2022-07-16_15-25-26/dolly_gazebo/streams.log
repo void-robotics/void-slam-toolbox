@@ -1,0 +1,171 @@
+[0.038s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo': AMENT_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake /home/shubhambackup/void-slam-toolbox/src/dolly/dolly_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo
+[0.126s] -- The C compiler identification is GNU 9.4.0
+[0.218s] -- The CXX compiler identification is GNU 9.4.0
+[0.225s] -- Check for working C compiler: /usr/bin/cc
+[0.342s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.344s] -- Detecting C compiler ABI info
+[0.466s] -- Detecting C compiler ABI info - done
+[0.478s] -- Detecting C compile features
+[0.478s] -- Detecting C compile features - done
+[0.482s] -- Check for working CXX compiler: /usr/bin/c++
+[0.611s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.611s] -- Detecting CXX compiler ABI info
+[0.754s] -- Detecting CXX compiler ABI info - done
+[0.774s] -- Detecting CXX compile features
+[0.775s] -- Detecting CXX compile features - done
+[0.789s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[0.803s] -- Checking for module 'bullet>=2.82'
+[0.833s] --   Found bullet, version 2.88
+[1.071s] -- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") 
+[1.193s] -- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") 
+[1.304s] -- Found assimp: /usr/include (found version "5.0.0") 
+[1.366s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.908s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.946s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+[1.952s] -- Looking for ignition-math6 -- found version 6.11.0
+[1.963s] -- Searching for dependencies of ignition-math6
+[1.967s] -- Looking for OGRE...
+[1.968s] -- OGRE_PREFIX_WATCH changed.
+[1.981s] -- Checking for module 'OGRE'
+[2.008s] --   Found OGRE, version 1.9.0
+[2.086s] -- Found Ogre Ghadamon (1.9.0)
+[2.105s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.123s] -- Looking for OGRE_Paging...
+[2.138s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.138s] -- Looking for OGRE_Terrain...
+[2.149s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.150s] -- Looking for OGRE_Property...
+[2.161s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.161s] -- Looking for OGRE_RTShaderSystem...
+[2.180s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.180s] -- Looking for OGRE_Volume...
+[2.195s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.195s] -- Looking for OGRE_Overlay...
+[2.208s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.457s] -- Looking for ignition-math6 -- found version 6.11.0
+[2.460s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.460s] -- Searching for dependencies of ignition-transport8
+[2.498s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[2.514s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.523s] -- Checking for module 'libzmq >= 4'
+[2.549s] --   Found libzmq , version 4.3.2
+[2.631s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.639s] -- Checking for module 'uuid'
+[2.664s] --   Found uuid, version 2.34.0
+[2.737s] -- Found UUID: TRUE  
+[2.741s] -- Looking for ignition-msgs5 -- found version 5.9.0
+[2.742s] -- Searching for dependencies of ignition-msgs5
+[2.775s] -- Looking for ignition-math6 -- found version 6.11.0
+[2.783s] -- Checking for module 'tinyxml2'
+[2.810s] --   Found tinyxml2, version 6.2.0
+[2.895s] -- Looking for ignition-msgs5 -- found version 5.9.0
+[2.900s] -- Looking for ignition-common3 -- found version 3.14.1
+[2.901s] -- Searching for dependencies of ignition-common3
+[2.902s] -- Looking for dlfcn.h - found
+[2.904s] -- Looking for libdl - found
+[2.907s] -- Found DL: TRUE  
+[2.923s] -- Searching for <ignition-common3> component [graphics]
+[2.928s] -- Looking for ignition-common3-graphics -- found version 3.14.1
+[2.929s] -- Searching for dependencies of ignition-common3-graphics
+[2.930s] -- Looking for ignition-math6 -- found version 6.11.0
+[2.935s] -- Looking for ignition-fuel_tools4 -- found version 4.5.0
+[2.936s] -- Searching for dependencies of ignition-fuel_tools4
+[3.082s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  
+[3.098s] -- Checking for module 'jsoncpp'
+[3.136s] --   Found jsoncpp, version 1.7.4
+[3.230s] -- Found JSONCPP: TRUE  
+[3.244s] -- Checking for module 'libzip'
+[3.286s] --   Found libzip, version 1.5.1
+[3.373s] -- Found ZIP: TRUE  
+[3.373s] -- Looking for ignition-common3 -- found version 3.14.1
+[3.374s] -- Looking for ignition-math6 -- found version 6.11.0
+[3.375s] -- Looking for ignition-msgs5 -- found version 5.9.0
+[3.379s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.422s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.423s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.710s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.739s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.857s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.864s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.866s] -- Added test 'lint_cmake' to check CMake code style
+[3.867s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.871s] -- Added test 'xmllint' to check XML markup files
+[3.875s] -- Configuring done
+[3.879s] -- Generating done
+[3.882s] -- Build files have been written to: /home/shubhambackup/void-slam-toolbox/build/dolly_gazebo
+[3.895s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo' returned '0': AMENT_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake /home/shubhambackup/void-slam-toolbox/src/dolly/dolly_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo
+[3.901s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo': AMENT_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/dolly_gazebo -- -j4 -l4
+[3.983s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo' returned '0': AMENT_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/dolly_gazebo -- -j4 -l4
+[4.031s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo': AMENT_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/dolly_gazebo
+[4.052s] -- Install configuration: ""
+[4.053s] -- Execute custom install script
+[4.053s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//launch/dolly.launch.py
+[4.073s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/brown_eye.png
+[4.087s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/casual_female.png
+[4.105s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyebrow002.png
+[4.125s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyelashes01.png
+[4.139s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_diffuse.png
+[4.156s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_normal.png
+[4.176s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_diffuse.png
+[4.191s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_normal.png
+[4.206s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/ponytail01_diffuse.png
+[4.225s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/shoes05_diffuse.png
+[4.245s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/tongue01_diffuse.png
+[4.261s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png
+[4.277s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/meshes/casual_female.dae
+[4.291s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.config
+[4.307s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.sdf
+[4.324s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/1.png
+[4.340s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/2.png
+[4.354s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/3.png
+[4.367s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/4.png
+[4.382s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/5.png
+[4.401s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain (original).jpg
+[4.418s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain.jpg
+[4.434s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/forest.jpg
+[4.449s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.config
+[4.462s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.sdf
+[4.481s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/scripts/script.material
+[4.494s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/textures/sheep.jpg
+[4.511s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.config
+[4.528s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.sdf
+[4.541s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.frag
+[4.557s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.vert
+[4.572s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/scripts/ocean.material
+[4.587s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/License and source soil_sand_0045_01.txt
+[4.602s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds.jpg
+[4.616s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_bk.jpg
+[4.638s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_dn.jpg
+[4.651s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_fr.jpg
+[4.665s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_lf.jpg
+[4.684s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_rt.jpg
+[4.705s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_up.jpg
+[4.719s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/normals.dds
+[4.736s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/soil_sand_0045_01.jpg
+[4.754s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh-simple.dae
+[4.768s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.blend
+[4.786s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.dae
+[4.801s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh_below.dae
+[4.816s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.config
+[4.837s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.sdf
+[4.854s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//rviz/dolly_gazebo.rviz
+[4.866s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_city.world
+[4.881s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_empty.world
+[4.896s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.sh
+[4.912s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.dsv
+[4.926s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/ament_index/resource_index/package_run_dependencies/dolly_gazebo
+[4.949s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/ament_index/resource_index/parent_prefix_path/dolly_gazebo
+[4.964s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.sh
+[4.977s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.dsv
+[4.994s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/path.sh
+[5.010s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/path.dsv
+[5.024s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/local_setup.bash
+[5.040s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/local_setup.sh
+[5.059s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/local_setup.zsh
+[5.072s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/local_setup.dsv
+[5.089s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/package.dsv
+[5.102s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/ament_index/resource_index/packages/dolly_gazebo
+[5.123s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig.cmake
+[5.140s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig-version.cmake
+[5.154s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/package.xml
+[5.173s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo' returned '0': AMENT_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/dolly_gazebo

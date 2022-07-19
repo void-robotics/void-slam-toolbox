@@ -1,0 +1,192 @@
+[0.441s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'void-slam-dolly']
+[0.441s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5fb16b7070>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['void-slam-dolly'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5fb16b7070>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f5fb14510a0>)
+[0.525s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.526s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/shubhambackup/void-slam-toolbox'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['ignore', 'ignore_ament_install']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'ignore'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'ignore_ament_install'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['colcon_pkg']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'colcon_pkg'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['colcon_meta']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'colcon_meta'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['ros']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'ros'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['cmake', 'python']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'cmake'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'python'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extensions ['python_setup_py']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly) by extension 'python_setup_py'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extensions ['ignore', 'ignore_ament_install']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'ignore'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'ignore_ament_install'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extensions ['colcon_pkg']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'colcon_pkg'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extensions ['colcon_meta']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'colcon_meta'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extensions ['ros']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly) by extension 'ros'
+[0.555s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dolly/dolly' with type 'ros.ament_cmake' and name 'dolly'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extensions ['ignore', 'ignore_ament_install']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'ignore'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'ignore_ament_install'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extensions ['colcon_pkg']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'colcon_pkg'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extensions ['colcon_meta']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'colcon_meta'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extensions ['ros']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_follow) by extension 'ros'
+[0.557s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dolly/dolly_follow' with type 'ros.ament_cmake' and name 'dolly_follow'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'ignore'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'ignore_ament_install'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extensions ['colcon_pkg']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'colcon_pkg'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extensions ['colcon_meta']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'colcon_meta'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extensions ['ros']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_gazebo) by extension 'ros'
+[0.558s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dolly/dolly_gazebo' with type 'ros.ament_cmake' and name 'dolly_gazebo'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extensions ['ignore', 'ignore_ament_install']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'ignore'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'ignore_ament_install'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extensions ['colcon_pkg']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'colcon_pkg'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extensions ['colcon_meta']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'colcon_meta'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extensions ['ros']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/dolly_ignition) by extension 'ros'
+[0.560s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dolly/dolly_ignition' with type 'ros.ament_cmake' and name 'dolly_ignition'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['ignore', 'ignore_ament_install']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'ignore'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'ignore_ament_install'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['colcon_pkg']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'colcon_pkg'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['colcon_meta']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'colcon_meta'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['ros']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'ros'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['cmake', 'python']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'cmake'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'python'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extensions ['python_setup_py']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/dolly/images) by extension 'python_setup_py'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/void-slam-dolly) by extensions ['ignore', 'ignore_ament_install']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/void-slam-dolly) by extension 'ignore'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/void-slam-dolly) by extension 'ignore_ament_install'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/void-slam-dolly) by extensions ['colcon_pkg']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/void-slam-dolly) by extension 'colcon_pkg'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/void-slam-dolly) by extensions ['colcon_meta']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/void-slam-dolly) by extension 'colcon_meta'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/void-slam-dolly) by extensions ['ros']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/void-slam-dolly) by extension 'ros'
+[0.563s] DEBUG:colcon.colcon_core.package_identification:Package 'src/void-slam-dolly' with type 'ros.ament_cmake' and name 'void-slam-dolly'
+[0.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.595s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dolly_follow' in 'src/dolly/dolly_follow'
+[0.595s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dolly_gazebo' in 'src/dolly/dolly_gazebo'
+[0.595s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dolly_ignition' in 'src/dolly/dolly_ignition'
+[0.595s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dolly' in 'src/dolly/dolly'
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.600s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/shubhambackup/void-slam-toolbox/install
+[0.602s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 276 installed packages in /opt/ros/foxy
+[0.604s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'void-slam-dolly' build argument 'cmake_args' from command line to 'None'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'void-slam-dolly' build argument 'cmake_target' from command line to 'None'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'void-slam-dolly' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'void-slam-dolly' build argument 'cmake_clean_cache' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'void-slam-dolly' build argument 'cmake_clean_first' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'void-slam-dolly' build argument 'cmake_force_configure' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'void-slam-dolly' build argument 'ament_cmake_args' from command line to 'None'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'void-slam-dolly' build argument 'catkin_cmake_args' from command line to 'None'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'void-slam-dolly' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.696s] DEBUG:colcon.colcon_core.verb:Building package 'void-slam-dolly' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly', 'merge_install': False, 'path': '/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly', 'symlink_install': True, 'test_result_base': None}
+[0.698s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.704s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.705s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly' with build type 'ament_cmake'
+[0.705s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly'
+[0.713s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.714s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.714s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[4.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[4.547s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(void-slam-dolly)
+[4.554s] Level 1:colcon.colcon_core.environment:checking '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly' for CMake module files
+[4.555s] Level 1:colcon.colcon_core.environment:checking '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly' for CMake config files
+[4.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('void-slam-dolly', 'cmake_prefix_path')
+[4.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/hook/cmake_prefix_path.ps1'
+[4.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/hook/cmake_prefix_path.dsv'
+[4.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/hook/cmake_prefix_path.sh'
+[4.562s] Level 1:colcon.colcon_core.environment:checking '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/bin'
+[4.562s] Level 1:colcon.colcon_core.environment:checking '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/lib/pkgconfig/void-slam-dolly.pc'
+[4.562s] Level 1:colcon.colcon_core.environment:checking '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/lib/python3.8/site-packages'
+[4.563s] Level 1:colcon.colcon_core.environment:checking '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/bin'
+[4.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.ps1'
+[4.566s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.dsv'
+[4.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.sh'
+[4.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.bash'
+[4.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.zsh'
+[4.571s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/colcon-core/packages/void-slam-dolly)
+[4.572s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.573s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.574s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[4.574s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.583s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.584s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.584s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.609s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.612s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/shubhambackup/void-slam-toolbox/install/local_setup.ps1'
+[4.614s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/shubhambackup/void-slam-toolbox/install/_local_setup_util_ps1.py'
+[4.615s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/shubhambackup/void-slam-toolbox/install/setup.ps1'
+[4.618s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/shubhambackup/void-slam-toolbox/install/local_setup.sh'
+[4.619s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/shubhambackup/void-slam-toolbox/install/_local_setup_util_sh.py'
+[4.620s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/shubhambackup/void-slam-toolbox/install/setup.sh'
+[4.622s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/shubhambackup/void-slam-toolbox/install/local_setup.bash'
+[4.623s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/shubhambackup/void-slam-toolbox/install/setup.bash'
+[4.625s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/shubhambackup/void-slam-toolbox/install/local_setup.zsh'
+[4.626s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/shubhambackup/void-slam-toolbox/install/setup.zsh'

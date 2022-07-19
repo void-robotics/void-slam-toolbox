@@ -1,0 +1,32 @@
+[0.027s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[0.177s] [ 33%] Built target obstacle_avoidance
+[0.185s] [ 66%] Built target moving_robot
+[0.185s] [100%] Built target reading_laser
+[0.206s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[0.296s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly
+[0.319s] -- Install configuration: ""
+[0.320s] -- Execute custom install script
+[0.321s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly//launch/dolly_launch.py
+[0.322s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly//launch/obstacle_avoidance.launch.py
+[0.322s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly//launch/online_async_launch.py
+[0.322s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly//launch/reading_laser_launch.py
+[0.323s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly//config/mapper_params_online_async.yaml
+[0.324s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/lib/void-slam-dolly//reading_laser
+[0.324s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/lib/void-slam-dolly//moving_robot
+[0.325s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/lib/void-slam-dolly//obstacle_avoidance
+[0.325s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/ament_index/resource_index/package_run_dependencies/void-slam-dolly
+[0.326s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/ament_index/resource_index/parent_prefix_path/void-slam-dolly
+[0.326s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/ament_prefix_path.sh
+[0.327s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/ament_prefix_path.dsv
+[0.330s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/path.sh
+[0.330s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/path.dsv
+[0.331s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.bash
+[0.332s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.sh
+[0.333s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.zsh
+[0.335s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.dsv
+[0.335s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.dsv
+[0.355s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/ament_index/resource_index/packages/void-slam-dolly
+[0.355s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/cmake/void-slam-dollyConfig.cmake
+[0.356s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/cmake/void-slam-dollyConfig-version.cmake
+[0.356s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.xml
+[0.363s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly

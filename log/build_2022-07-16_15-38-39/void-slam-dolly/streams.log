@@ -1,0 +1,68 @@
+[0.026s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shubhambackup/void-slam-toolbox/src/void-slam-dolly -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly
+[0.118s] -- The C compiler identification is GNU 9.4.0
+[0.201s] -- The CXX compiler identification is GNU 9.4.0
+[0.208s] -- Check for working C compiler: /usr/bin/cc
+[0.315s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.316s] -- Detecting C compiler ABI info
+[0.436s] -- Detecting C compiler ABI info - done
+[0.456s] -- Detecting C compile features
+[0.457s] -- Detecting C compile features - done
+[0.461s] -- Check for working CXX compiler: /usr/bin/c++
+[0.595s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.596s] -- Detecting CXX compiler ABI info
+[0.744s] -- Detecting CXX compiler ABI info - done
+[0.762s] -- Detecting CXX compile features
+[0.765s] -- Detecting CXX compile features - done
+[0.769s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.809s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.809s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.113s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.142s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.203s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.212s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.360s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.409s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.535s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.614s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.616s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.617s] -- Looking for pthread.h
+[1.735s] -- Looking for pthread.h - found
+[1.736s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.855s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.856s] -- Looking for pthread_create in pthreads
+[1.968s] -- Looking for pthread_create in pthreads - not found
+[1.969s] -- Looking for pthread_create in pthread
+[2.082s] -- Looking for pthread_create in pthread - found
+[2.084s] -- Found Threads: TRUE  
+[2.321s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.431s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.433s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.434s] -- Added test 'lint_cmake' to check CMake code style
+[2.435s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.436s] -- Added test 'xmllint' to check XML markup files
+[2.440s] -- Configuring done
+[2.443s] -- Generating done
+[2.446s] -- Build files have been written to: /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly
+[2.460s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shubhambackup/void-slam-toolbox/src/void-slam-dolly -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly
+[2.466s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[2.533s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[2.588s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly
+[2.606s] -- Install configuration: ""
+[2.608s] -- Execute custom install script
+[2.610s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly//launch/dolly_launch.py
+[2.627s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/ament_index/resource_index/package_run_dependencies/void-slam-dolly
+[2.642s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/ament_index/resource_index/parent_prefix_path/void-slam-dolly
+[2.659s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/ament_prefix_path.sh
+[2.674s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/ament_prefix_path.dsv
+[2.696s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/path.sh
+[2.710s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/path.dsv
+[2.726s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.bash
+[2.741s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.sh
+[2.758s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.zsh
+[2.772s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.dsv
+[2.786s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.dsv
+[2.802s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/ament_index/resource_index/packages/void-slam-dolly
+[2.817s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/cmake/void-slam-dollyConfig.cmake
+[2.831s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/cmake/void-slam-dollyConfig-version.cmake
+[2.851s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.xml
+[2.872s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly

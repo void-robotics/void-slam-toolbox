@@ -1,0 +1,225 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Searching for dependencies of ignition-math6
+-- Looking for ignition-plugin1 -- found version 1.2.1
+-- Searching for dependencies of ignition-plugin1
+-- Searching for <ignition-plugin1> component [loader]
+-- Looking for ignition-plugin1-loader -- found version 1.2.1
+-- Searching for dependencies of ignition-plugin1-loader
+-- Searching for <ignition-plugin1> component [register]
+-- Looking for ignition-plugin1-register -- found version 1.2.1
+-- Searching for dependencies of ignition-plugin1-register
+-- Looking for ignition-transport8 -- found version 8.2.1
+-- Searching for dependencies of ignition-transport8
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq , version 4.3.2
+-- Found ZeroMQ: TRUE (Required is at least version "4") 
+-- Checking for module 'uuid'
+--   Found uuid, version 2.34.0
+-- Found UUID: TRUE  
+-- Looking for ignition-msgs5 -- found version 5.9.0
+-- Searching for dependencies of ignition-msgs5
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 6.2.0
+-- Searching for <ignition-transport8> component [log]
+-- Looking for ignition-transport8-log -- found version 8.2.1
+-- Searching for dependencies of ignition-transport8-log
+-- Looking for ignition-msgs5 -- found version 5.9.0
+-- Looking for ignition-common3 -- found version 3.14.1
+-- Searching for dependencies of ignition-common3
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Found DL: TRUE  
+-- Searching for <ignition-common3> component [profiler]
+-- Looking for ignition-common3-profiler -- found version 3.14.1
+-- Searching for dependencies of ignition-common3-profiler
+-- Searching for <ignition-common3> component [events]
+-- Looking for ignition-common3-events -- found version 3.14.1
+-- Searching for dependencies of ignition-common3-events
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Searching for <ignition-common3> component [av]
+-- Looking for ignition-common3-av -- found version 3.14.1
+-- Searching for dependencies of ignition-common3-av
+-- Checking for module 'libswscale'
+--   Found libswscale, version 5.5.100
+-- Found SWSCALE: TRUE  
+-- Checking for module 'libavdevice >= 56.4.100'
+--   Found libavdevice , version 58.8.100
+-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") 
+-- Checking for module 'libavformat'
+--   Found libavformat, version 58.29.100
+-- Found AVFORMAT: TRUE  
+-- Checking for module 'libavcodec'
+--   Found libavcodec, version 58.54.100
+-- Found AVCODEC: TRUE  
+-- Checking for module 'libavutil'
+--   Found libavutil, version 56.31.100
+-- Found AVUTIL: TRUE  
+-- Looking for ignition-fuel_tools4 -- found version 4.5.0
+-- Searching for dependencies of ignition-fuel_tools4
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  
+-- Checking for module 'jsoncpp'
+--   Found jsoncpp, version 1.7.4
+-- Found JSONCPP: TRUE  
+-- Checking for module 'libzip'
+--   Found libzip, version 1.5.1
+-- Found ZIP: TRUE  
+-- Looking for ignition-common3 -- found version 3.14.1
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Looking for ignition-msgs5 -- found version 5.9.0
+-- Looking for ignition-gui3 -- found version 3.10.0
+-- Searching for dependencies of ignition-gui3
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Looking for ignition-common3 -- found version 3.14.1
+-- Looking for ignition-plugin1 -- found version 1.2.1
+-- Looking for ignition-transport8 -- found version 8.2.1
+-- Looking for ignition-rendering3 -- found version 3.6.0
+-- Searching for dependencies of ignition-rendering3
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Looking for ignition-common3 -- found version 3.14.1
+-- Searching for dependencies of ignition-common3
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <ignition-common3> component [graphics]
+-- Looking for ignition-common3-graphics -- found version 3.14.1
+-- Searching for dependencies of ignition-common3-graphics
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Searching for <ignition-common3> component [events]
+-- Looking for ignition-plugin1 -- found version 1.2.1
+-- Searching for dependencies of ignition-plugin1
+-- Searching for <ignition-plugin1> component [all]
+-- Looking for all libraries of ignition-plugin1 -- found version 1.2.1
+-- Looking for ignition-plugin1 -- found version 1.2.1
+-- Looking for ignition-msgs5 -- found version 5.9.0
+-- Looking for ignition-physics2 -- found version 2.5.0
+-- Searching for dependencies of ignition-physics2
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Searching for dependencies of ignition-math6
+-- Searching for <ignition-math6> component [eigen3]
+-- Looking for ignition-math6-eigen3 -- found version 6.11.0
+-- Searching for dependencies of ignition-math6-eigen3
+-- Looking for ignition-plugin1 -- found version 1.2.1
+-- Searching for <ignition-physics2> component [mesh]
+-- Looking for ignition-physics2-mesh -- found version 2.5.0
+-- Searching for dependencies of ignition-physics2-mesh
+-- Looking for ignition-common3 -- found version 3.14.1
+-- Searching for <ignition-physics2> component [sdf]
+-- Looking for ignition-physics2-sdf -- found version 2.5.0
+-- Searching for dependencies of ignition-physics2-sdf
+-- Looking for ignition-sensors3 -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Looking for ignition-common3 -- found version 3.14.1
+-- Looking for ignition-transport8 -- found version 8.2.1
+-- Looking for ignition-rendering3 -- found version 3.6.0
+-- Looking for ignition-msgs5 -- found version 5.9.0
+-- Looking for ignition-plugin1 -- found version 1.2.1
+-- Searching for <ignition-sensors3> component [rendering]
+-- Looking for ignition-sensors3-rendering -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-rendering
+-- Searching for <ignition-sensors3> component [air_pressure]
+-- Looking for ignition-sensors3-air_pressure -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-air_pressure
+-- Searching for <ignition-sensors3> component [altimeter]
+-- Looking for ignition-sensors3-altimeter -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-altimeter
+-- Searching for <ignition-sensors3> component [camera]
+-- Looking for ignition-sensors3-camera -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-camera
+-- Searching for <ignition-sensors3> component [gpu_lidar]
+-- Looking for ignition-sensors3-gpu_lidar -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-gpu_lidar
+-- Searching for <ignition-sensors3> component [imu]
+-- Looking for ignition-sensors3-imu -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-imu
+-- Searching for <ignition-sensors3> component [logical_camera]
+-- Looking for ignition-sensors3-logical_camera -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-logical_camera
+-- Searching for <ignition-sensors3> component [magnetometer]
+-- Looking for ignition-sensors3-magnetometer -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-magnetometer
+-- Searching for <ignition-sensors3> component [depth_camera]
+-- Looking for ignition-sensors3-depth_camera -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-depth_camera
+-- Searching for <ignition-sensors3> component [thermal_camera]
+-- Looking for ignition-sensors3-thermal_camera -- found version 3.3.0
+-- Searching for dependencies of ignition-sensors3-thermal_camera
+-- Looking for ignition-rendering3 -- found version 3.6.0
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/shubhambackup/void-slam-toolbox/build/dolly_ignition
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//ign/gui.config
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//launch/dolly.launch.py
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/brown_eye.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/casual_female.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/eyebrow002.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/eyelashes01.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit01_diffuse.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit01_normal.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit02_diffuse.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit02_normal.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/ponytail01_diffuse.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/shoes05_diffuse.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/tongue01_diffuse.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/meshes/casual_female.dae
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/model.config
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/model.sdf
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/1.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/2.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/3.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/4.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/5.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials/textures/cardboard_box.png
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials/textures/sheep.jpg
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/meshes/cardboard_box.dae
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/model.config
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/model.sdf
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//rviz/dolly_ignition.rviz
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//worlds/station.sdf
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/dolly_ignition.sh
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/dolly_ignition.dsv
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/ament_index/resource_index/package_run_dependencies/dolly_ignition
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/ament_index/resource_index/parent_prefix_path/dolly_ignition
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/ament_prefix_path.sh
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/ament_prefix_path.dsv
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/path.sh
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/path.dsv
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.bash
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.sh
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.zsh
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.dsv
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/package.dsv
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/ament_index/resource_index/packages/dolly_ignition
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/cmake/dolly_ignitionConfig.cmake
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/cmake/dolly_ignitionConfig-version.cmake
+-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/package.xml

@@ -1,0 +1,51 @@
+[0.028s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[0.088s] [35m[1mScanning dependencies of target reading_laser[0m
+[0.127s] [ 50%] [32mBuilding CXX object CMakeFiles/reading_laser.dir/src/reading_laser.cpp.o[0m
+[1.870s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:24:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[1.871s]    24 | }
+[1.871s]       |  [01;31m[K^[m[K
+[1.871s]       |  [32m[K;[m[K
+[1.873s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:[m[K In constructor ‘[01m[KReadingLaser::ReadingLaser()[m[K’:
+[1.873s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:9:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_[m[K’?
+[1.874s]     9 |   [01;31m[Ksubscription[m[K = this->create_subscription<sensor_msgs::LaserScan>(
+[1.874s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[1.874s]       |   [32m[Ksubscription_[m[K
+[1.874s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:9:57:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::LaserScan[m[K’?
+[1.874s]     9 |   subscription = this->create_subscription<sensor_msgs::[01;31m[KLaserScan[m[K>(
+[1.875s]       |                                                         [01;31m[K^~~~~~~~~[m[K
+[1.875s] In file included from [01m[K/opt/ros/foxy/include/sensor_msgs/msg/laser_scan.hpp:7[m[K,
+[1.875s]                  from [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:2[m[K:
+[1.875s] [01m[K/opt/ros/foxy/include/sensor_msgs/msg/detail/laser_scan__struct.hpp:246:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::LaserScan[m[K’ declared here
+[1.875s]   246 | using [01;36m[KLaserScan[m[K =
+[1.875s]       |       [01;36m[K^~~~~~~~~[m[K
+[1.875s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:9:57:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::LaserScan[m[K’?
+[1.876s]     9 |   subscription = this->create_subscription<sensor_msgs::[01;31m[KLaserScan[m[K>(
+[1.876s]       |                                                         [01;31m[K^~~~~~~~~[m[K
+[1.876s] In file included from [01m[K/opt/ros/foxy/include/sensor_msgs/msg/laser_scan.hpp:7[m[K,
+[1.876s]                  from [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:2[m[K:
+[1.876s] [01m[K/opt/ros/foxy/include/sensor_msgs/msg/detail/laser_scan__struct.hpp:246:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::LaserScan[m[K’ declared here
+[1.876s]   246 | using [01;36m[KLaserScan[m[K =
+[1.876s]       |       [01;36m[K^~~~~~~~~[m[K
+[1.884s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:11:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KReadingLaser::create_subscription<<expression error> >(const char [11], rclcpp::QoS&, std::_Bind_helper<false, void (ReadingLaser::*)(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void> > >), ReadingLaser*, int>::type)[m[K’
+[1.884s]    11 |    std::bind(&ReadingLaser::topic_callback,  this, 1)[01;31m[K)[m[K;
+[1.884s]       |                                                      [01;31m[K^[m[K
+[1.885s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.885s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.885s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.885s]                  from [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:1[m[K:
+[1.885s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[1.885s]   213 |   [01;36m[Kcreate_subscription[m[K(
+[1.885s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.886s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.886s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:11:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.886s]    11 |    std::bind(&ReadingLaser::topic_callback,  this, 1)[01;31m[K)[m[K;
+[1.886s]       |                                                      [01;31m[K^[m[K
+[1.891s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:[m[K In member function ‘[01m[Kvoid ReadingLaser::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.892s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:18:3:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+[1.892s]    18 |   [01;31m[KRCLPP_INFO[m[K(this->get_logger(), "I heard: '%f' '%f'", _msg->ranges[0],
+[1.892s]       |   [01;31m[K^~~~~~~~~~[m[K
+[1.892s]       |   [32m[KRCLCPP_INFO[m[K
+[2.445s] make[2]: *** [CMakeFiles/reading_laser.dir/build.make:63: CMakeFiles/reading_laser.dir/src/reading_laser.cpp.o] Error 1
+[2.446s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/reading_laser.dir/all] Error 2
+[2.446s] make: *** [Makefile:141: all] Error 2
+[2.452s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4

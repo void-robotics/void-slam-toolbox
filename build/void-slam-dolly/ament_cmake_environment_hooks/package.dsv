@@ -1,0 +1,4 @@
+source;share/void-slam-dolly/local_setup.bash
+source;share/void-slam-dolly/local_setup.dsv
+source;share/void-slam-dolly/local_setup.sh
+source;share/void-slam-dolly/local_setup.zsh

@@ -1,0 +1,20 @@
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:4:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kclass[m[K’
+    4 | using std::placeholders::_1
+      |                            [01;31m[K^[m[K
+      |                            [32m[K;[m[K
+    5 | 
+    6 | [32m[Kclass[m[K ReadingLaser : public rclcpp::Node {
+      | [32m[K~~~~~[m[K                       
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:[m[K In constructor ‘[01m[KReadingLaser::ReadingLaser()[m[K’:
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:13:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_[m[K’?
+   13 |   [01;31m[Ksubscription[m[K = this->create_subscription<sensor_msgs::msg::LaserScan>(
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+      |   [32m[Ksubscription_[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:[m[K In member function ‘[01m[Kvoid ReadingLaser::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:22:3:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+   22 |   [01;31m[KRCLPP_INFO[m[K(this->get_logger(), "I heard: '%f' '%f'", _msg->ranges[0],
+      |   [01;31m[K^~~~~~~~~~[m[K
+      |   [32m[KRCLCPP_INFO[m[K
+make[2]: *** [CMakeFiles/reading_laser.dir/build.make:63: CMakeFiles/reading_laser.dir/src/reading_laser.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/reading_laser.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

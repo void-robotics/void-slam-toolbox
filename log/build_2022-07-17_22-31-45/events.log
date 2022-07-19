@@ -1,0 +1,86 @@
+[0.000000] (-) TimerEvent: {}
+[0.001305] (-) JobUnselected: {'identifier': 'dolly'}
+[0.002147] (-) JobUnselected: {'identifier': 'dolly_follow'}
+[0.002271] (-) JobUnselected: {'identifier': 'dolly_gazebo'}
+[0.002329] (-) JobUnselected: {'identifier': 'dolly_ignition'}
+[0.002381] (void-slam-dolly) JobQueued: {'identifier': 'void-slam-dolly', 'dependencies': OrderedDict()}
+[0.002462] (void-slam-dolly) JobStarted: {'identifier': 'void-slam-dolly'}
+[0.022135] (void-slam-dolly) JobProgress: {'identifier': 'void-slam-dolly', 'progress': 'cmake'}
+[0.023509] (void-slam-dolly) JobProgress: {'identifier': 'void-slam-dolly', 'progress': 'build'}
+[0.024917] (void-slam-dolly) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly', '--', '-j4', '-l4'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1894'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1721'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:54895'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/models::/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1929,unix/ubuntu:/tmp/.ICE-unix/1929'), ('INVOCATION_ID', 'b3c10a1a92cb456f804f1ab6e1b7e1ed'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/16d73938_ddd7_485b_b30c_045278d0585e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('IGN_FILE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly:/home/shubhambackup/void-slam-toolbox/install/dolly:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SDF_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly:/home/shubhambackup/void-slam-toolbox/install/dolly:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[0.090506] (void-slam-dolly) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target reading_laser\x1b[0m\n'}
+[0.099693] (-) TimerEvent: {}
+[0.129698] (void-slam-dolly) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/reading_laser.dir/src/reading_laser.cpp.o\x1b[0m\n'}
+[0.200060] (-) TimerEvent: {}
+[0.301119] (-) TimerEvent: {}
+[0.402134] (-) TimerEvent: {}
+[0.503661] (-) TimerEvent: {}
+[0.605097] (-) TimerEvent: {}
+[0.706594] (-) TimerEvent: {}
+[0.807471] (-) TimerEvent: {}
+[0.909249] (-) TimerEvent: {}
+[1.010500] (-) TimerEvent: {}
+[1.111074] (-) TimerEvent: {}
+[1.212030] (-) TimerEvent: {}
+[1.312923] (-) TimerEvent: {}
+[1.414476] (-) TimerEvent: {}
+[1.515375] (-) TimerEvent: {}
+[1.616873] (-) TimerEvent: {}
+[1.717686] (-) TimerEvent: {}
+[1.818872] (-) TimerEvent: {}
+[1.872444] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:24:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[1.872963] (void-slam-dolly) StderrLine: {'line': b'   24 | }\n'}
+[1.873124] (void-slam-dolly) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.873200] (void-slam-dolly) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.875426] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KReadingLaser::ReadingLaser()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.875815] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:9:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.875968] (void-slam-dolly) StderrLine: {'line': b'    9 |   \x1b[01;31m\x1b[Ksubscription\x1b[m\x1b[K = this->create_subscription<sensor_msgs::LaserScan>(\n'}
+[1.876073] (void-slam-dolly) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.876233] (void-slam-dolly) StderrLine: {'line': b'      |   \x1b[32m\x1b[Ksubscription_\x1b[m\x1b[K\n'}
+[1.876767] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:9:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLaserScan\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::LaserScan\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.876891] (void-slam-dolly) StderrLine: {'line': b'    9 |   subscription = this->create_subscription<sensor_msgs::\x1b[01;31m\x1b[KLaserScan\x1b[m\x1b[K>(\n'}
+[1.876973] (void-slam-dolly) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.877075] (void-slam-dolly) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/sensor_msgs/msg/laser_scan.hpp:7\x1b[m\x1b[K,\n'}
+[1.877195] (void-slam-dolly) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:2\x1b[m\x1b[K:\n'}
+[1.877340] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/sensor_msgs/msg/detail/laser_scan__struct.hpp:246:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::LaserScan\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.877502] (void-slam-dolly) StderrLine: {'line': b'  246 | using \x1b[01;36m\x1b[KLaserScan\x1b[m\x1b[K =\n'}
+[1.877660] (void-slam-dolly) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.877807] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:9:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLaserScan\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::LaserScan\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.877955] (void-slam-dolly) StderrLine: {'line': b'    9 |   subscription = this->create_subscription<sensor_msgs::\x1b[01;31m\x1b[KLaserScan\x1b[m\x1b[K>(\n'}
+[1.878102] (void-slam-dolly) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.878240] (void-slam-dolly) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/sensor_msgs/msg/laser_scan.hpp:7\x1b[m\x1b[K,\n'}
+[1.878340] (void-slam-dolly) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:2\x1b[m\x1b[K:\n'}
+[1.878523] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/sensor_msgs/msg/detail/laser_scan__struct.hpp:246:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::LaserScan\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.878732] (void-slam-dolly) StderrLine: {'line': b'  246 | using \x1b[01;36m\x1b[KLaserScan\x1b[m\x1b[K =\n'}
+[1.878890] (void-slam-dolly) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.886255] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:11:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KReadingLaser::create_subscription<<expression error> >(const char [11], rclcpp::QoS&, std::_Bind_helper<false, void (ReadingLaser::*)(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void> > >), ReadingLaser*, int>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.886615] (void-slam-dolly) StderrLine: {'line': b'   11 |    std::bind(&ReadingLaser::topic_callback,  this, 1)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.886774] (void-slam-dolly) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.886931] (void-slam-dolly) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.887085] (void-slam-dolly) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.887231] (void-slam-dolly) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.887386] (void-slam-dolly) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:1\x1b[m\x1b[K:\n'}
+[1.887491] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.887611] (void-slam-dolly) StderrLine: {'line': b'  213 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[1.887769] (void-slam-dolly) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.887920] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.888431] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:11:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.888606] (void-slam-dolly) StderrLine: {'line': b'   11 |    std::bind(&ReadingLaser::topic_callback,  this, 1)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.888723] (void-slam-dolly) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.893859] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ReadingLaser::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.894027] (void-slam-dolly) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:18:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRCLPP_INFO\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_INFO\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.894183] (void-slam-dolly) StderrLine: {'line': b'   18 |   \x1b[01;31m\x1b[KRCLPP_INFO\x1b[m\x1b[K(this->get_logger(), "I heard: \'%f\' \'%f\'", _msg->ranges[0],\n'}
+[1.894356] (void-slam-dolly) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.894459] (void-slam-dolly) StderrLine: {'line': b'      |   \x1b[32m\x1b[KRCLCPP_INFO\x1b[m\x1b[K\n'}
+[1.919651] (-) TimerEvent: {}
+[2.020281] (-) TimerEvent: {}
+[2.121571] (-) TimerEvent: {}
+[2.222554] (-) TimerEvent: {}
+[2.323461] (-) TimerEvent: {}
+[2.425053] (-) TimerEvent: {}
+[2.447382] (void-slam-dolly) StderrLine: {'line': b'make[2]: *** [CMakeFiles/reading_laser.dir/build.make:63: CMakeFiles/reading_laser.dir/src/reading_laser.cpp.o] Error 1\n'}
+[2.447977] (void-slam-dolly) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/reading_laser.dir/all] Error 2\n'}
+[2.448294] (void-slam-dolly) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.451413] (void-slam-dolly) CommandEnded: {'returncode': 2}
+[2.517128] (void-slam-dolly) JobEnded: {'identifier': 'void-slam-dolly', 'rc': 2}
+[2.519138] (-) EventReactorShutdown: {}

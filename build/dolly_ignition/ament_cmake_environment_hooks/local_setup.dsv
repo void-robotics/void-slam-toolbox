@@ -1,0 +1,4 @@
+source;share/dolly_ignition/environment/ament_prefix_path.sh
+source;share/dolly_ignition/environment/dolly_ignition.sh
+source;share/dolly_ignition/environment/path.sh
+source;share/dolly_ignition/environment/dolly_ignition.dsv

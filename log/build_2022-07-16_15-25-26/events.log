@@ -1,0 +1,779 @@
+[0.000000] (-) TimerEvent: {}
+[0.001324] (dolly_follow) JobQueued: {'identifier': 'dolly_follow', 'dependencies': OrderedDict()}
+[0.001984] (dolly_gazebo) JobQueued: {'identifier': 'dolly_gazebo', 'dependencies': OrderedDict([('dolly_follow', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow')])}
+[0.002065] (dolly_ignition) JobQueued: {'identifier': 'dolly_ignition', 'dependencies': OrderedDict([('dolly_follow', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow')])}
+[0.002118] (dolly) JobQueued: {'identifier': 'dolly', 'dependencies': OrderedDict([('dolly_follow', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow'), ('dolly_gazebo', '/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo'), ('dolly_ignition', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition')])}
+[0.002392] (dolly_follow) JobStarted: {'identifier': 'dolly_follow'}
+[0.030548] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'cmake'}
+[0.030749] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '/home/shubhambackup/void-slam-toolbox/src/dolly/dolly_follow', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/dolly_follow'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly_follow', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly_follow'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.097760] (-) TimerEvent: {}
+[0.199153] (-) TimerEvent: {}
+[0.300136] (-) TimerEvent: {}
+[0.400710] (-) TimerEvent: {}
+[0.429143] (dolly_follow) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.501269] (-) TimerEvent: {}
+[0.601953] (-) TimerEvent: {}
+[0.702709] (-) TimerEvent: {}
+[0.803405] (-) TimerEvent: {}
+[0.841639] (dolly_follow) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.863364] (dolly_follow) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.903811] (-) TimerEvent: {}
+[1.005142] (-) TimerEvent: {}
+[1.040411] (dolly_follow) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.043630] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.105976] (-) TimerEvent: {}
+[1.207003] (-) TimerEvent: {}
+[1.212785] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.228813] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.230208] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.236377] (dolly_follow) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.307804] (-) TimerEvent: {}
+[1.387903] (dolly_follow) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.389250] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.408985] (-) TimerEvent: {}
+[1.510276] (-) TimerEvent: {}
+[1.607787] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.611097] (-) TimerEvent: {}
+[1.624495] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.625134] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.640449] (dolly_follow) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.688718] (dolly_follow) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.689336] (dolly_follow) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.711503] (-) TimerEvent: {}
+[1.812991] (-) TimerEvent: {}
+[1.913800] (-) TimerEvent: {}
+[2.015109] (-) TimerEvent: {}
+[2.049262] (dolly_follow) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.104263] (dolly_follow) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[2.115798] (-) TimerEvent: {}
+[2.182635] (dolly_follow) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.199797] (dolly_follow) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.216056] (-) TimerEvent: {}
+[2.316644] (-) TimerEvent: {}
+[2.383395] (dolly_follow) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.417549] (-) TimerEvent: {}
+[2.432653] (dolly_follow) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.518407] (-) TimerEvent: {}
+[2.594687] (dolly_follow) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.619107] (-) TimerEvent: {}
+[2.719695] (-) TimerEvent: {}
+[2.772341] (dolly_follow) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.819886] (-) TimerEvent: {}
+[2.876100] (dolly_follow) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.879886] (dolly_follow) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.884057] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.922713] (-) TimerEvent: {}
+[3.023671] (-) TimerEvent: {}
+[3.028655] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.028981] (dolly_follow) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.123874] (-) TimerEvent: {}
+[3.166457] (dolly_follow) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.166718] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.224027] (-) TimerEvent: {}
+[3.293749] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.294137] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.324929] (-) TimerEvent: {}
+[3.421797] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[3.424014] (dolly_follow) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.425208] (-) TimerEvent: {}
+[3.526043] (-) TimerEvent: {}
+[3.627075] (-) TimerEvent: {}
+[3.684915] (dolly_follow) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[3.727950] (-) TimerEvent: {}
+[3.789590] (dolly_follow) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[3.828342] (-) TimerEvent: {}
+[3.929030] (-) TimerEvent: {}
+[3.980479] (dolly_follow) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.982887] (dolly_follow) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.983220] (dolly_follow) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.983405] (dolly_follow) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.984841] (dolly_follow) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.985054] (dolly_follow) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.987181] (dolly_follow) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.989363] (dolly_follow) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.989486] (dolly_follow) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.990648] (dolly_follow) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.998255] (dolly_follow) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.011092] (dolly_follow) StdoutLine: {'line': b'-- Generating done\n'}
+[4.013507] (dolly_follow) StdoutLine: {'line': b'-- Build files have been written to: /home/shubhambackup/void-slam-toolbox/build/dolly_follow\n'}
+[4.025559] (dolly_follow) CommandEnded: {'returncode': 0}
+[4.034252] (-) TimerEvent: {}
+[4.034783] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'build'}
+[4.034848] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shubhambackup/void-slam-toolbox/build/dolly_follow', '--', '-j4', '-l4'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly_follow', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly_follow'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.103102] (dolly_follow) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dolly_follow\x1b[0m\n'}
+[4.134733] (-) TimerEvent: {}
+[4.235494] (-) TimerEvent: {}
+[4.293156] (dolly_follow) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dolly_follow.dir/src/dolly_follow.cpp.o\x1b[0m\n'}
+[4.335816] (-) TimerEvent: {}
+[4.436912] (-) TimerEvent: {}
+[4.537775] (-) TimerEvent: {}
+[4.638375] (-) TimerEvent: {}
+[4.739007] (-) TimerEvent: {}
+[4.840555] (-) TimerEvent: {}
+[4.941941] (-) TimerEvent: {}
+[5.042740] (-) TimerEvent: {}
+[5.143416] (-) TimerEvent: {}
+[5.244447] (-) TimerEvent: {}
+[5.345896] (-) TimerEvent: {}
+[5.447440] (-) TimerEvent: {}
+[5.547920] (-) TimerEvent: {}
+[5.648514] (-) TimerEvent: {}
+[5.749033] (-) TimerEvent: {}
+[5.849873] (-) TimerEvent: {}
+[5.950483] (-) TimerEvent: {}
+[6.051662] (-) TimerEvent: {}
+[6.152254] (-) TimerEvent: {}
+[6.252869] (-) TimerEvent: {}
+[6.353414] (-) TimerEvent: {}
+[6.454014] (-) TimerEvent: {}
+[6.554819] (-) TimerEvent: {}
+[6.655335] (-) TimerEvent: {}
+[6.756316] (-) TimerEvent: {}
+[6.857000] (-) TimerEvent: {}
+[6.957613] (-) TimerEvent: {}
+[7.059117] (-) TimerEvent: {}
+[7.161406] (-) TimerEvent: {}
+[7.263163] (-) TimerEvent: {}
+[7.364673] (-) TimerEvent: {}
+[7.465737] (-) TimerEvent: {}
+[7.566168] (-) TimerEvent: {}
+[7.666798] (-) TimerEvent: {}
+[7.767445] (-) TimerEvent: {}
+[7.868986] (-) TimerEvent: {}
+[7.969591] (-) TimerEvent: {}
+[8.070342] (-) TimerEvent: {}
+[8.170900] (-) TimerEvent: {}
+[8.271818] (-) TimerEvent: {}
+[8.372697] (-) TimerEvent: {}
+[8.474236] (-) TimerEvent: {}
+[8.575588] (-) TimerEvent: {}
+[8.676777] (-) TimerEvent: {}
+[8.777490] (-) TimerEvent: {}
+[8.878085] (-) TimerEvent: {}
+[8.979088] (-) TimerEvent: {}
+[9.079788] (-) TimerEvent: {}
+[9.180225] (-) TimerEvent: {}
+[9.280823] (-) TimerEvent: {}
+[9.381459] (-) TimerEvent: {}
+[9.482403] (-) TimerEvent: {}
+[9.582934] (-) TimerEvent: {}
+[9.683599] (-) TimerEvent: {}
+[9.784167] (-) TimerEvent: {}
+[9.884636] (-) TimerEvent: {}
+[9.985286] (-) TimerEvent: {}
+[10.086011] (-) TimerEvent: {}
+[10.187366] (-) TimerEvent: {}
+[10.287986] (-) TimerEvent: {}
+[10.389455] (-) TimerEvent: {}
+[10.490674] (-) TimerEvent: {}
+[10.591255] (-) TimerEvent: {}
+[10.692089] (-) TimerEvent: {}
+[10.792979] (-) TimerEvent: {}
+[10.893778] (-) TimerEvent: {}
+[10.995039] (-) TimerEvent: {}
+[11.095642] (-) TimerEvent: {}
+[11.197204] (-) TimerEvent: {}
+[11.298358] (-) TimerEvent: {}
+[11.400043] (-) TimerEvent: {}
+[11.500849] (-) TimerEvent: {}
+[11.601506] (-) TimerEvent: {}
+[11.702551] (-) TimerEvent: {}
+[11.803295] (-) TimerEvent: {}
+[11.904967] (-) TimerEvent: {}
+[12.006072] (-) TimerEvent: {}
+[12.106865] (-) TimerEvent: {}
+[12.208117] (-) TimerEvent: {}
+[12.309220] (-) TimerEvent: {}
+[12.410120] (-) TimerEvent: {}
+[12.511299] (-) TimerEvent: {}
+[12.612440] (-) TimerEvent: {}
+[12.713524] (-) TimerEvent: {}
+[12.814171] (-) TimerEvent: {}
+[12.915088] (-) TimerEvent: {}
+[13.016129] (-) TimerEvent: {}
+[13.117165] (-) TimerEvent: {}
+[13.217762] (-) TimerEvent: {}
+[13.318962] (-) TimerEvent: {}
+[13.420317] (-) TimerEvent: {}
+[13.521082] (-) TimerEvent: {}
+[13.622132] (-) TimerEvent: {}
+[13.722658] (-) TimerEvent: {}
+[13.824588] (-) TimerEvent: {}
+[13.925431] (-) TimerEvent: {}
+[14.027213] (-) TimerEvent: {}
+[14.128148] (-) TimerEvent: {}
+[14.228922] (-) TimerEvent: {}
+[14.329907] (-) TimerEvent: {}
+[14.431433] (-) TimerEvent: {}
+[14.532660] (-) TimerEvent: {}
+[14.633404] (-) TimerEvent: {}
+[14.694721] (dolly_follow) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dolly_follow\x1b[0m\n'}
+[14.734260] (-) TimerEvent: {}
+[14.835134] (-) TimerEvent: {}
+[14.936205] (-) TimerEvent: {}
+[15.037578] (-) TimerEvent: {}
+[15.112185] (dolly_follow) StdoutLine: {'line': b'[100%] Built target dolly_follow\n'}
+[15.132322] (dolly_follow) CommandEnded: {'returncode': 0}
+[15.137975] (-) TimerEvent: {}
+[15.180767] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'install'}
+[15.199503] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shubhambackup/void-slam-toolbox/build/dolly_follow'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly_follow', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly_follow'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[15.217686] (dolly_follow) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.218871] (dolly_follow) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.222519] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/lib/dolly_follow/dolly_follow\n'}
+[15.239494] (-) TimerEvent: {}
+[15.240607] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/ament_index/resource_index/package_run_dependencies/dolly_follow\n'}
+[15.257593] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/ament_index/resource_index/parent_prefix_path/dolly_follow\n'}
+[15.270076] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.sh\n'}
+[15.290955] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.dsv\n'}
+[15.307080] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/environment/path.sh\n'}
+[15.323351] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/environment/path.dsv\n'}
+[15.337100] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/local_setup.bash\n'}
+[15.339966] (-) TimerEvent: {}
+[15.351551] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/local_setup.sh\n'}
+[15.364469] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/local_setup.zsh\n'}
+[15.389075] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/local_setup.dsv\n'}
+[15.405220] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/package.dsv\n'}
+[15.417978] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/ament_index/resource_index/packages/dolly_follow\n'}
+[15.431790] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig.cmake\n'}
+[15.441119] (-) TimerEvent: {}
+[15.446385] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig-version.cmake\n'}
+[15.463087] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/package.xml\n'}
+[15.482253] (dolly_follow) CommandEnded: {'returncode': 0}
+[15.541401] (-) TimerEvent: {}
+[15.589005] (dolly_follow) JobEnded: {'identifier': 'dolly_follow', 'rc': 0}
+[15.590938] (dolly_gazebo) JobStarted: {'identifier': 'dolly_gazebo'}
+[15.606010] (dolly_ignition) JobStarted: {'identifier': 'dolly_ignition'}
+[15.617281] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'cmake'}
+[15.617483] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/shubhambackup/void-slam-toolbox/src/dolly/dolly_gazebo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[15.632116] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'cmake'}
+[15.632199] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '/home/shubhambackup/void-slam-toolbox/src/dolly/dolly_ignition', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/dolly_ignition'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[15.642823] (-) TimerEvent: {}
+[15.716488] (dolly_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[15.734848] (dolly_ignition) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[15.743370] (-) TimerEvent: {}
+[15.808851] (dolly_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[15.815529] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[15.819796] (dolly_ignition) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[15.827182] (dolly_ignition) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[15.844020] (-) TimerEvent: {}
+[15.933147] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[15.934500] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[15.944621] (-) TimerEvent: {}
+[15.945811] (dolly_ignition) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[15.946863] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[16.045153] (-) TimerEvent: {}
+[16.056961] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[16.068133] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[16.068620] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[16.069101] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[16.072478] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[16.085960] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[16.086291] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[16.089368] (dolly_ignition) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[16.145329] (-) TimerEvent: {}
+[16.201498] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[16.201777] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[16.226180] (dolly_ignition) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[16.226506] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[16.245855] (-) TimerEvent: {}
+[16.344938] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[16.346201] (-) TimerEvent: {}
+[16.361705] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[16.364851] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[16.365634] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[16.377395] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[16.378084] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[16.379860] (dolly_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[16.393700] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[16.416986] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[16.417653] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[16.423420] (dolly_gazebo) StdoutLine: {'line': b'--   Found bullet, version 2.88\n'}
+[16.425708] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.2.1\n'}
+[16.426238] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[16.428691] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [loader]\n'}
+[16.431605] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1-loader -- found version 1.2.1\n'}
+[16.432282] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-loader\n'}
+[16.434349] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [register]\n'}
+[16.438209] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1-register -- found version 1.2.1\n'}
+[16.438453] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-register\n'}
+[16.443846] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[16.444246] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[16.446741] (-) TimerEvent: {}
+[16.547336] (-) TimerEvent: {}
+[16.648265] (-) TimerEvent: {}
+[16.661661] (dolly_gazebo) StdoutLine: {'line': b'-- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") \n'}
+[16.748589] (-) TimerEvent: {}
+[16.783305] (dolly_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") \n'}
+[16.849520] (-) TimerEvent: {}
+[16.894569] (dolly_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.0.0") \n'}
+[16.949689] (-) TimerEvent: {}
+[16.956579] (dolly_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[16.999853] (dolly_ignition) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") \n'}
+[17.017967] (dolly_ignition) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[17.024011] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[17.050016] (-) TimerEvent: {}
+[17.058056] (dolly_ignition) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[17.150334] (dolly_ignition) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[17.150738] (-) TimerEvent: {}
+[17.160851] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[17.188750] (dolly_ignition) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[17.251532] (-) TimerEvent: {}
+[17.260740] (dolly_ignition) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[17.267093] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.9.0\n'}
+[17.268770] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[17.300115] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[17.307635] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[17.343670] (dolly_ignition) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[17.351655] (-) TimerEvent: {}
+[17.429047] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-transport8> component [log]\n'}
+[17.432707] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-transport8-log -- found version 8.2.1\n'}
+[17.433542] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8-log\n'}
+[17.436452] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.9.0\n'}
+[17.440226] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.1\n'}
+[17.441282] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[17.442483] (dolly_ignition) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[17.444199] (dolly_ignition) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[17.446350] (dolly_ignition) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[17.451761] (-) TimerEvent: {}
+[17.467389] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [profiler]\n'}
+[17.472715] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3-profiler -- found version 3.14.1\n'}
+[17.473553] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-profiler\n'}
+[17.477544] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [events]\n'}
+[17.483609] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3-events -- found version 3.14.1\n'}
+[17.484241] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-events\n'}
+[17.485318] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[17.487542] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [av]\n'}
+[17.491330] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3-av -- found version 3.14.1\n'}
+[17.491924] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-av\n'}
+[17.499025] (dolly_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[17.502715] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[17.533761] (dolly_ignition) StdoutLine: {'line': b'--   Found libswscale, version 5.5.100\n'}
+[17.536430] (dolly_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") \n'}
+[17.543144] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[17.554086] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[17.554293] (-) TimerEvent: {}
+[17.557842] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[17.558600] (dolly_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[17.572074] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[17.598320] (dolly_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[17.613920] (dolly_ignition) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[17.621792] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[17.654470] (-) TimerEvent: {}
+[17.654977] (dolly_ignition) StdoutLine: {'line': b'--   Found libavdevice , version 58.8.100\n'}
+[17.676571] (dolly_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[17.695297] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[17.713633] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[17.728576] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[17.728853] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[17.729910] (dolly_ignition) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[17.737465] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[17.740245] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[17.740564] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[17.751633] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[17.752130] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[17.755756] (-) TimerEvent: {}
+[17.771098] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[17.771395] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[17.775946] (dolly_ignition) StdoutLine: {'line': b'--   Found libavformat, version 58.29.100\n'}
+[17.785984] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[17.786271] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[17.798970] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[17.856471] (-) TimerEvent: {}
+[17.869260] (dolly_ignition) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[17.877847] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[17.917536] (dolly_ignition) StdoutLine: {'line': b'--   Found libavcodec, version 58.54.100\n'}
+[17.956912] (-) TimerEvent: {}
+[18.041594] (dolly_ignition) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[18.048173] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.050753] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[18.051386] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[18.058069] (-) TimerEvent: {}
+[18.060983] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[18.088440] (dolly_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") \n'}
+[18.098105] (dolly_ignition) StdoutLine: {'line': b'--   Found libavutil, version 56.31.100\n'}
+[18.105205] (dolly_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[18.113610] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[18.139553] (dolly_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[18.158984] (-) TimerEvent: {}
+[18.175027] (dolly_ignition) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[18.184088] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.5.0\n'}
+[18.185027] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[18.221294] (dolly_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[18.229382] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[18.254957] (dolly_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[18.259428] (-) TimerEvent: {}
+[18.327569] (dolly_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[18.332206] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.9.0\n'}
+[18.333341] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[18.341891] (dolly_ignition) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  \n'}
+[18.358919] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[18.360241] (-) TimerEvent: {}
+[18.366294] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.373758] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[18.389835] (dolly_ignition) StdoutLine: {'line': b'--   Found jsoncpp, version 1.7.4\n'}
+[18.400423] (dolly_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[18.459221] (dolly_ignition) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[18.460842] (-) TimerEvent: {}
+[18.471939] (dolly_ignition) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[18.485641] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.9.0\n'}
+[18.491061] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.1\n'}
+[18.492199] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[18.492894] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[18.494785] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[18.495692] (dolly_ignition) StdoutLine: {'line': b'--   Found libzip, version 1.5.1\n'}
+[18.497496] (dolly_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[18.514027] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[18.518347] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.1\n'}
+[18.520057] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[18.520815] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.525666] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.5.0\n'}
+[18.526628] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[18.561032] (-) TimerEvent: {}
+[18.574415] (dolly_ignition) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[18.575026] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.1\n'}
+[18.576241] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.576348] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.9.0\n'}
+[18.584069] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-gui3 -- found version 3.10.0\n'}
+[18.585047] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gui3\n'}
+[18.633339] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.633796] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.1\n'}
+[18.634295] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.2.1\n'}
+[18.634819] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[18.645543] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-rendering3 -- found version 3.6.0\n'}
+[18.645895] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-rendering3\n'}
+[18.646349] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.647647] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.1\n'}
+[18.648659] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[18.649148] (dolly_ignition) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[18.649343] (dolly_ignition) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[18.661346] (-) TimerEvent: {}
+[18.663124] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[18.665743] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.1\n'}
+[18.666704] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[18.667953] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.669434] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [events]\n'}
+[18.673211] (dolly_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  \n'}
+[18.674301] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.2.1\n'}
+[18.674893] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[18.675393] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [all]\n'}
+[18.680342] (dolly_ignition) StdoutLine: {'line': b'-- Looking for all libraries of ignition-plugin1 -- found version 1.2.1\n'}
+[18.680480] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.2.1\n'}
+[18.687855] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.9.0\n'}
+[18.688445] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[18.726772] (dolly_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.7.4\n'}
+[18.753368] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-physics2 -- found version 2.5.0\n'}
+[18.754112] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics2\n'}
+[18.754711] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.755584] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[18.755842] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-math6> component [eigen3]\n'}
+[18.761499] (-) TimerEvent: {}
+[18.762023] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6-eigen3 -- found version 6.11.0\n'}
+[18.763392] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6-eigen3\n'}
+[18.768823] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.2.1\n'}
+[18.772163] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-physics2> component [mesh]\n'}
+[18.777486] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-physics2-mesh -- found version 2.5.0\n'}
+[18.778231] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics2-mesh\n'}
+[18.778796] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.1\n'}
+[18.780083] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-physics2> component [sdf]\n'}
+[18.783410] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-physics2-sdf -- found version 2.5.0\n'}
+[18.784202] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics2-sdf\n'}
+[18.794443] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3 -- found version 3.3.0\n'}
+[18.795574] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3\n'}
+[18.820652] (dolly_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[18.826450] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.827695] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.1\n'}
+[18.828838] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[18.829686] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-rendering3 -- found version 3.6.0\n'}
+[18.830520] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.9.0\n'}
+[18.831346] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.2.1\n'}
+[18.834754] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[18.835136] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [rendering]\n'}
+[18.838938] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-rendering -- found version 3.3.0\n'}
+[18.840058] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-rendering\n'}
+[18.842882] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [air_pressure]\n'}
+[18.848317] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-air_pressure -- found version 3.3.0\n'}
+[18.849032] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-air_pressure\n'}
+[18.854915] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [altimeter]\n'}
+[18.856962] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-altimeter -- found version 3.3.0\n'}
+[18.857115] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-altimeter\n'}
+[18.860933] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [camera]\n'}
+[18.862001] (-) TimerEvent: {}
+[18.866367] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-camera -- found version 3.3.0\n'}
+[18.867489] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-camera\n'}
+[18.870397] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [gpu_lidar]\n'}
+[18.874087] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-gpu_lidar -- found version 3.3.0\n'}
+[18.875155] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-gpu_lidar\n'}
+[18.876898] (dolly_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.5.1\n'}
+[18.878386] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [imu]\n'}
+[18.882762] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-imu -- found version 3.3.0\n'}
+[18.882921] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-imu\n'}
+[18.885062] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [logical_camera]\n'}
+[18.889030] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-logical_camera -- found version 3.3.0\n'}
+[18.891131] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-logical_camera\n'}
+[18.894217] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [magnetometer]\n'}
+[18.898323] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-magnetometer -- found version 3.3.0\n'}
+[18.898499] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-magnetometer\n'}
+[18.900589] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [depth_camera]\n'}
+[18.907311] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-depth_camera -- found version 3.3.0\n'}
+[18.908667] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-depth_camera\n'}
+[18.910764] (dolly_ignition) StdoutLine: {'line': b'-- Searching for <ignition-sensors3> component [thermal_camera]\n'}
+[18.916604] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-sensors3-thermal_camera -- found version 3.3.0\n'}
+[18.918417] (dolly_ignition) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors3-thermal_camera\n'}
+[18.924054] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-rendering3 -- found version 3.6.0\n'}
+[18.924258] (dolly_ignition) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.962238] (-) TimerEvent: {}
+[18.963427] (dolly_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[18.964056] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.1\n'}
+[18.964460] (dolly_ignition) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[18.964663] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.11.0\n'}
+[18.965335] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.9.0\n'}
+[18.969893] (dolly_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[19.008501] (dolly_ignition) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[19.008823] (dolly_ignition) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[19.012762] (dolly_gazebo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[19.013913] (dolly_gazebo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[19.063379] (-) TimerEvent: {}
+[19.163998] (-) TimerEvent: {}
+[19.264602] (-) TimerEvent: {}
+[19.300386] (dolly_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[19.310200] (dolly_ignition) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[19.329600] (dolly_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[19.341788] (dolly_ignition) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[19.364859] (-) TimerEvent: {}
+[19.447718] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[19.455121] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[19.456545] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[19.457550] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[19.461911] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[19.463809] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[19.465026] (-) TimerEvent: {}
+[19.465403] (dolly_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.470109] (dolly_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[19.470721] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[19.472449] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[19.472817] (dolly_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/shubhambackup/void-slam-toolbox/build/dolly_gazebo\n'}
+[19.474049] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[19.477173] (dolly_ignition) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[19.482141] (dolly_ignition) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.486029] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[19.487558] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'build'}
+[19.491287] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo', '--', '-j4', '-l4'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[19.492578] (dolly_ignition) StdoutLine: {'line': b'-- Generating done\n'}
+[19.495487] (dolly_ignition) StdoutLine: {'line': b'-- Build files have been written to: /home/shubhambackup/void-slam-toolbox/build/dolly_ignition\n'}
+[19.510095] (dolly_ignition) CommandEnded: {'returncode': 0}
+[19.511217] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'build'}
+[19.514080] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition', '--', '-j4', '-l4'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[19.565536] (-) TimerEvent: {}
+[19.573339] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[19.585083] (dolly_ignition) CommandEnded: {'returncode': 0}
+[19.617427] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'install'}
+[19.620608] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[19.639638] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'install'}
+[19.640135] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[19.642701] (dolly_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.643994] (dolly_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[19.644291] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//launch/dolly.launch.py\n'}
+[19.658207] (dolly_ignition) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.658804] (dolly_ignition) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[19.659830] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//ign/gui.config\n'}
+[19.663962] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/brown_eye.png\n'}
+[19.665693] (-) TimerEvent: {}
+[19.677822] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/casual_female.png\n'}
+[19.678790] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//launch/dolly.launch.py\n'}
+[19.693803] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/brown_eye.png\n'}
+[19.696032] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyebrow002.png\n'}
+[19.709591] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/casual_female.png\n'}
+[19.715774] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyelashes01.png\n'}
+[19.726256] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/eyebrow002.png\n'}
+[19.729623] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_diffuse.png\n'}
+[19.742742] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/eyelashes01.png\n'}
+[19.746897] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_normal.png\n'}
+[19.762774] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit01_diffuse.png\n'}
+[19.765869] (-) TimerEvent: {}
+[19.766444] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_diffuse.png\n'}
+[19.776667] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit01_normal.png\n'}
+[19.781884] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_normal.png\n'}
+[19.796836] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/ponytail01_diffuse.png\n'}
+[19.797581] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit02_diffuse.png\n'}
+[19.815459] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/shoes05_diffuse.png\n'}
+[19.816590] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit02_normal.png\n'}
+[19.833304] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/ponytail01_diffuse.png\n'}
+[19.836136] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/tongue01_diffuse.png\n'}
+[19.851860] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png\n'}
+[19.853110] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/shoes05_diffuse.png\n'}
+[19.866511] (-) TimerEvent: {}
+[19.867684] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/meshes/casual_female.dae\n'}
+[19.868851] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/tongue01_diffuse.png\n'}
+[19.881636] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.config\n'}
+[19.882731] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png\n'}
+[19.897884] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.sdf\n'}
+[19.901097] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/meshes/casual_female.dae\n'}
+[19.914962] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/1.png\n'}
+[19.917724] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/model.config\n'}
+[19.930774] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/2.png\n'}
+[19.935786] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/model.sdf\n'}
+[19.944517] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/3.png\n'}
+[19.949269] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/1.png\n'}
+[19.957810] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/4.png\n'}
+[19.964168] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/2.png\n'}
+[19.966927] (-) TimerEvent: {}
+[19.973020] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/5.png\n'}
+[19.977257] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/3.png\n'}
+[19.991916] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain (original).jpg\n'}
+[19.996388] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/4.png\n'}
+[20.008577] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain.jpg\n'}
+[20.011480] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/5.png\n'}
+[20.024986] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/forest.jpg\n'}
+[20.029823] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials/textures/cardboard_box.png\n'}
+[20.040258] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.config\n'}
+[20.050131] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials/textures/sheep.jpg\n'}
+[20.052451] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.sdf\n'}
+[20.064789] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/meshes/cardboard_box.dae\n'}
+[20.067436] (-) TimerEvent: {}
+[20.071558] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/scripts/script.material\n'}
+[20.078088] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/model.config\n'}
+[20.084914] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/textures/sheep.jpg\n'}
+[20.092225] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/model.sdf\n'}
+[20.101653] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.config\n'}
+[20.110869] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//rviz/dolly_ignition.rviz\n'}
+[20.118921] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.sdf\n'}
+[20.127895] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//worlds/station.sdf\n'}
+[20.131434] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.frag\n'}
+[20.146230] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/dolly_ignition.sh\n'}
+[20.147426] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.vert\n'}
+[20.159998] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/dolly_ignition.dsv\n'}
+[20.162437] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/scripts/ocean.material\n'}
+[20.167615] (-) TimerEvent: {}
+[20.177502] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/License and source soil_sand_0045_01.txt\n'}
+[20.180229] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/ament_index/resource_index/package_run_dependencies/dolly_ignition\n'}
+[20.192594] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds.jpg\n'}
+[20.194921] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/ament_index/resource_index/parent_prefix_path/dolly_ignition\n'}
+[20.206596] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_bk.jpg\n'}
+[20.210140] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/ament_prefix_path.sh\n'}
+[20.228346] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/ament_prefix_path.dsv\n'}
+[20.228806] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_dn.jpg\n'}
+[20.242020] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_fr.jpg\n'}
+[20.243503] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/path.sh\n'}
+[20.255647] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_lf.jpg\n'}
+[20.256095] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/path.dsv\n'}
+[20.268099] (-) TimerEvent: {}
+[20.270762] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.bash\n'}
+[20.274996] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_rt.jpg\n'}
+[20.284484] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.sh\n'}
+[20.295808] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_up.jpg\n'}
+[20.303449] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.zsh\n'}
+[20.310120] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/normals.dds\n'}
+[20.317345] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.dsv\n'}
+[20.326312] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/soil_sand_0045_01.jpg\n'}
+[20.331886] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/package.dsv\n'}
+[20.344456] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh-simple.dae\n'}
+[20.347246] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/ament_index/resource_index/packages/dolly_ignition\n'}
+[20.358506] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.blend\n'}
+[20.361799] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/cmake/dolly_ignitionConfig.cmake\n'}
+[20.368915] (-) TimerEvent: {}
+[20.375959] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/cmake/dolly_ignitionConfig-version.cmake\n'}
+[20.376581] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.dae\n'}
+[20.391660] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh_below.dae\n'}
+[20.394502] (dolly_ignition) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/package.xml\n'}
+[20.406725] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.config\n'}
+[20.425787] (dolly_ignition) CommandEnded: {'returncode': 0}
+[20.427736] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.sdf\n'}
+[20.444417] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//rviz/dolly_gazebo.rviz\n'}
+[20.457066] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_city.world\n'}
+[20.469089] (-) TimerEvent: {}
+[20.471912] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_empty.world\n'}
+[20.487259] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.sh\n'}
+[20.500979] (dolly_ignition) JobEnded: {'identifier': 'dolly_ignition', 'rc': 0}
+[20.503020] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.dsv\n'}
+[20.516813] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/ament_index/resource_index/package_run_dependencies/dolly_gazebo\n'}
+[20.539310] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/ament_index/resource_index/parent_prefix_path/dolly_gazebo\n'}
+[20.555308] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.sh\n'}
+[20.567782] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.dsv\n'}
+[20.569266] (-) TimerEvent: {}
+[20.584819] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/path.sh\n'}
+[20.600944] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/environment/path.dsv\n'}
+[20.614857] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/local_setup.bash\n'}
+[20.631128] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/local_setup.sh\n'}
+[20.649423] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/local_setup.zsh\n'}
+[20.662973] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/local_setup.dsv\n'}
+[20.669941] (-) TimerEvent: {}
+[20.679368] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/package.dsv\n'}
+[20.692558] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/ament_index/resource_index/packages/dolly_gazebo\n'}
+[20.713323] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig.cmake\n'}
+[20.731008] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig-version.cmake\n'}
+[20.744641] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/package.xml\n'}
+[20.764125] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[20.771204] (-) TimerEvent: {}
+[20.852315] (dolly_gazebo) JobEnded: {'identifier': 'dolly_gazebo', 'rc': 0}
+[20.854430] (dolly) JobStarted: {'identifier': 'dolly'}
+[20.871440] (-) TimerEvent: {}
+[20.873662] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'cmake'}
+[20.874275] (dolly) Command: {'cmd': ['/usr/bin/cmake', '/home/shubhambackup/void-slam-toolbox/src/dolly/dolly', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/dolly'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/models::/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IGN_FILE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_RESOURCE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SDF_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[20.965312] (dolly) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[20.971883] (-) TimerEvent: {}
+[21.059299] (dolly) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[21.065519] (dolly) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[21.072176] (-) TimerEvent: {}
+[21.172707] (-) TimerEvent: {}
+[21.188369] (dolly) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[21.189223] (dolly) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[21.273154] (-) TimerEvent: {}
+[21.312596] (dolly) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[21.326015] (dolly) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[21.326459] (dolly) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[21.329646] (dolly) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[21.373392] (-) TimerEvent: {}
+[21.462608] (dolly) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[21.463982] (dolly) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[21.473655] (-) TimerEvent: {}
+[21.574557] (-) TimerEvent: {}
+[21.593835] (dolly) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[21.609540] (dolly) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[21.610199] (dolly) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[21.613090] (dolly) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[21.655482] (dolly) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[21.655788] (dolly) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[21.674888] (-) TimerEvent: {}
+[21.775701] (-) TimerEvent: {}
+[21.876732] (-) TimerEvent: {}
+[21.952178] (dolly) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[21.977011] (-) TimerEvent: {}
+[21.986223] (dolly) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[22.077771] (-) TimerEvent: {}
+[22.107673] (dolly) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[22.109805] (dolly) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[22.111131] (dolly) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[22.114781] (dolly) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.117168] (dolly) StdoutLine: {'line': b'-- Generating done\n'}
+[22.118645] (dolly) StdoutLine: {'line': b'-- Build files have been written to: /home/shubhambackup/void-slam-toolbox/build/dolly\n'}
+[22.124310] (dolly) CommandEnded: {'returncode': 0}
+[22.128358] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'build'}
+[22.128760] (dolly) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shubhambackup/void-slam-toolbox/build/dolly', '--', '-j4', '-l4'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/models::/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IGN_FILE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_RESOURCE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SDF_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[22.178087] (-) TimerEvent: {}
+[22.199211] (dolly) CommandEnded: {'returncode': 0}
+[22.242825] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'install'}
+[22.246468] (dolly) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shubhambackup/void-slam-toolbox/build/dolly'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/dolly', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1926'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('OLDPWD', '/home/shubhambackup/void-slam-toolbox/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:53096'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/models::/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1961,unix/ubuntu:/tmp/.ICE-unix/1961'), ('INVOCATION_ID', '56dbe37e91bd4a1bbbc3d234b9f86310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fab2e1c_6a69_4094_a075_acfaa743710e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IGN_FILE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_RESOURCE_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/dolly'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SDF_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/worlds:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/models'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[22.262309] (dolly) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.262830] (dolly) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[22.263442] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/ament_index/resource_index/package_run_dependencies/dolly\n'}
+[22.278289] (-) TimerEvent: {}
+[22.282245] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/ament_index/resource_index/parent_prefix_path/dolly\n'}
+[22.295841] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/environment/ament_prefix_path.sh\n'}
+[22.315086] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/environment/ament_prefix_path.dsv\n'}
+[22.331511] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/environment/path.sh\n'}
+[22.348423] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/environment/path.dsv\n'}
+[22.361578] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/local_setup.bash\n'}
+[22.379015] (-) TimerEvent: {}
+[22.379556] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/local_setup.sh\n'}
+[22.397997] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/local_setup.zsh\n'}
+[22.415138] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/local_setup.dsv\n'}
+[22.432898] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/package.dsv\n'}
+[22.450332] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/ament_index/resource_index/packages/dolly\n'}
+[22.468441] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/cmake/dollyConfig.cmake\n'}
+[22.480151] (-) TimerEvent: {}
+[22.483565] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/cmake/dollyConfig-version.cmake\n'}
+[22.498789] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly/share/dolly/package.xml\n'}
+[22.518449] (dolly) CommandEnded: {'returncode': 0}
+[22.581408] (-) TimerEvent: {}
+[22.599733] (dolly) JobEnded: {'identifier': 'dolly', 'rc': 0}
+[22.601393] (-) EventReactorShutdown: {}

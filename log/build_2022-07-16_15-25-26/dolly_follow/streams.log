@@ -1,0 +1,79 @@
+[0.029s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/dolly_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shubhambackup/void-slam-toolbox/src/dolly/dolly_follow -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/dolly_follow
+[0.427s] -- The C compiler identification is GNU 9.4.0
+[0.839s] -- The CXX compiler identification is GNU 9.4.0
+[0.861s] -- Check for working C compiler: /usr/bin/cc
+[1.038s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.041s] -- Detecting C compiler ABI info
+[1.211s] -- Detecting C compiler ABI info - done
+[1.227s] -- Detecting C compile features
+[1.228s] -- Detecting C compile features - done
+[1.234s] -- Check for working CXX compiler: /usr/bin/c++
+[1.386s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.387s] -- Detecting CXX compiler ABI info
+[1.606s] -- Detecting CXX compiler ABI info - done
+[1.622s] -- Detecting CXX compile features
+[1.623s] -- Detecting CXX compile features - done
+[1.638s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.687s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.687s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.047s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.102s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[2.180s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.198s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.381s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.430s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.592s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.770s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.874s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.878s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.882s] -- Looking for pthread.h
+[3.026s] -- Looking for pthread.h - found
+[3.027s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.164s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.164s] -- Looking for pthread_create in pthreads
+[3.292s] -- Looking for pthread_create in pthreads - not found
+[3.292s] -- Looking for pthread_create in pthread
+[3.420s] -- Looking for pthread_create in pthread - found
+[3.422s] -- Found Threads: TRUE  
+[3.683s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.787s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.978s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.981s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.981s] -- Configured cppcheck include dirs: 
+[3.981s] -- Configured cppcheck exclude dirs and/or files: 
+[3.983s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.983s] -- Configured cpplint exclude dirs and/or files: 
+[3.985s] -- Added test 'lint_cmake' to check CMake code style
+[3.987s] -- Added test 'uncrustify' to check C / C++ code style
+[3.987s] -- Configured uncrustify additional arguments: 
+[3.988s] -- Added test 'xmllint' to check XML markup files
+[3.996s] -- Configuring done
+[4.009s] -- Generating done
+[4.011s] -- Build files have been written to: /home/shubhambackup/void-slam-toolbox/build/dolly_follow
+[4.031s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shubhambackup/void-slam-toolbox/src/dolly/dolly_follow -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/shubhambackup/void-slam-toolbox/install/dolly_follow
+[4.033s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/dolly_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/dolly_follow -- -j4 -l4
+[4.101s] [35m[1mScanning dependencies of target dolly_follow[0m
+[4.291s] [ 50%] [32mBuilding CXX object CMakeFiles/dolly_follow.dir/src/dolly_follow.cpp.o[0m
+[14.693s] [100%] [32m[1mLinking CXX executable dolly_follow[0m
+[15.110s] [100%] Built target dolly_follow
+[15.130s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/dolly_follow -- -j4 -l4
+[15.198s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/dolly_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/dolly_follow
+[15.216s] -- Install configuration: ""
+[15.217s] -- Execute custom install script
+[15.220s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/lib/dolly_follow/dolly_follow
+[15.238s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/ament_index/resource_index/package_run_dependencies/dolly_follow
+[15.255s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/ament_index/resource_index/parent_prefix_path/dolly_follow
+[15.268s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.sh
+[15.289s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.dsv
+[15.305s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/environment/path.sh
+[15.321s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/environment/path.dsv
+[15.335s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/local_setup.bash
+[15.349s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/local_setup.sh
+[15.362s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/local_setup.zsh
+[15.387s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/local_setup.dsv
+[15.403s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/package.dsv
+[15.416s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/ament_index/resource_index/packages/dolly_follow
+[15.430s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig.cmake
+[15.444s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig-version.cmake
+[15.461s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_follow/share/dolly_follow/package.xml
+[15.480s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/dolly_follow

@@ -1,0 +1,52 @@
+[0.039s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition': CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly:/home/shubhambackup/void-slam-toolbox/install/dolly:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/dolly_ignition -- -j4 -l4
+[0.123s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition' returned '0': CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly:/home/shubhambackup/void-slam-toolbox/install/dolly:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/dolly_ignition -- -j4 -l4
+[0.200s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition': CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly:/home/shubhambackup/void-slam-toolbox/install/dolly:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/dolly_ignition
+[0.213s] -- Install configuration: ""
+[0.214s] -- Execute custom install script
+[0.216s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//ign/gui.config
+[0.217s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//launch/dolly.launch.py
+[0.218s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/brown_eye.png
+[0.219s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/casual_female.png
+[0.219s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/eyebrow002.png
+[0.219s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/eyelashes01.png
+[0.219s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit01_diffuse.png
+[0.220s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit01_normal.png
+[0.220s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit02_diffuse.png
+[0.220s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/female_casualsuit02_normal.png
+[0.221s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/ponytail01_diffuse.png
+[0.221s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/shoes05_diffuse.png
+[0.221s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/tongue01_diffuse.png
+[0.221s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png
+[0.222s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/meshes/casual_female.dae
+[0.222s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/model.config
+[0.223s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/model.sdf
+[0.223s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/1.png
+[0.223s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/2.png
+[0.223s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/3.png
+[0.224s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/4.png
+[0.224s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/casual_female/thumbnails/5.png
+[0.228s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials/textures/cardboard_box.png
+[0.229s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/materials/textures/sheep.jpg
+[0.229s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/meshes/cardboard_box.dae
+[0.229s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/model.config
+[0.229s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//models/dolly_ignition/model.sdf
+[0.229s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//rviz/dolly_ignition.rviz
+[0.230s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition//worlds/station.sdf
+[0.230s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/dolly_ignition.sh
+[0.230s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/dolly_ignition.dsv
+[0.230s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/ament_index/resource_index/package_run_dependencies/dolly_ignition
+[0.230s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/ament_index/resource_index/parent_prefix_path/dolly_ignition
+[0.231s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/ament_prefix_path.sh
+[0.231s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/ament_prefix_path.dsv
+[0.231s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/path.sh
+[0.238s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/environment/path.dsv
+[0.239s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.bash
+[0.240s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.sh
+[0.240s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.zsh
+[0.241s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/local_setup.dsv
+[0.241s] -- Symlinking: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/package.dsv
+[0.271s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/ament_index/resource_index/packages/dolly_ignition
+[0.274s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/cmake/dolly_ignitionConfig.cmake
+[0.275s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/cmake/dolly_ignitionConfig-version.cmake
+[0.275s] -- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/dolly_ignition/share/dolly_ignition/package.xml
+[0.276s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/dolly_ignition' returned '0': CMAKE_PREFIX_PATH=/home/shubhambackup/void-slam-toolbox/install/dolly_follow:/home/shubhambackup/void-slam-toolbox/install/void-slam-dolly:/home/shubhambackup/void-slam-toolbox/install/dolly:/home/shubhambackup/void-slam-toolbox/install/dolly_ignition:/home/shubhambackup/void-slam-toolbox/install/dolly_gazebo:/opt/ros/foxy /usr/bin/cmake --install /home/shubhambackup/void-slam-toolbox/build/dolly_ignition

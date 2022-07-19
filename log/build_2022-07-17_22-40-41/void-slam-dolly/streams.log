@@ -1,0 +1,19 @@
+[0.027s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[0.090s] [35m[1mScanning dependencies of target reading_laser[0m
+[0.132s] [ 50%] [32mBuilding CXX object CMakeFiles/reading_laser.dir/src/reading_laser.cpp.o[0m
+[1.899s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:4:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kclass[m[K’
+[1.899s]     4 | using std::placeholders::_1
+[1.899s]       |                            [01;31m[K^[m[K
+[1.900s]       |                            [32m[K;[m[K
+[1.900s]     5 | 
+[1.900s]     6 | [32m[Kclass[m[K ReadingLaser : public rclcpp::Node {
+[1.900s]       | [32m[K~~~~~[m[K                       
+[1.921s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:[m[K In constructor ‘[01m[KReadingLaser::ReadingLaser()[m[K’:
+[1.921s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:13:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_[m[K’?
+[1.921s]    13 |   [01;31m[Ksubscription[m[K = this->create_subscription<sensor_msgs::msg::LaserScan>(
+[1.922s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[1.922s]       |   [32m[Ksubscription_[m[K
+[3.791s] make[2]: *** [CMakeFiles/reading_laser.dir/build.make:63: CMakeFiles/reading_laser.dir/src/reading_laser.cpp.o] Error 1
+[3.791s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/reading_laser.dir/all] Error 2
+[3.792s] make: *** [Makefile:141: all] Error 2
+[3.798s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4

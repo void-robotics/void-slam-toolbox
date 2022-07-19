@@ -1,0 +1,210 @@
+[0.000000] (-) TimerEvent: {}
+[0.000953] (-) JobUnselected: {'identifier': 'dolly'}
+[0.001523] (-) JobUnselected: {'identifier': 'dolly_follow'}
+[0.002761] (-) JobUnselected: {'identifier': 'dolly_gazebo'}
+[0.002833] (-) JobUnselected: {'identifier': 'dolly_ignition'}
+[0.002881] (void-slam-dolly) JobQueued: {'identifier': 'void-slam-dolly', 'dependencies': OrderedDict()}
+[0.002925] (void-slam-dolly) JobStarted: {'identifier': 'void-slam-dolly'}
+[0.008864] (void-slam-dolly) JobProgress: {'identifier': 'void-slam-dolly', 'progress': 'cmake'}
+[0.008983] (void-slam-dolly) JobProgress: {'identifier': 'void-slam-dolly', 'progress': 'build'}
+[0.010339] (void-slam-dolly) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly', '--', '-j4', '-l4'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1894'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1721'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:54895'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1929,unix/ubuntu:/tmp/.ICE-unix/1929'), ('INVOCATION_ID', 'b3c10a1a92cb456f804f1ab6e1b7e1ed'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3ac38247_3b1f_44d2_9dcb_94715b886b8d'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.078577] (-) TimerEvent: {}
+[0.108800] (void-slam-dolly) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.146941] (void-slam-dolly) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.179474] (-) TimerEvent: {}
+[0.280302] (-) TimerEvent: {}
+[0.381049] (-) TimerEvent: {}
+[0.481567] (-) TimerEvent: {}
+[0.534755] (void-slam-dolly) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.547013] (void-slam-dolly) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.581757] (-) TimerEvent: {}
+[0.604005] (void-slam-dolly) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.611814] (void-slam-dolly) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.682177] (-) TimerEvent: {}
+[0.782884] (-) TimerEvent: {}
+[0.822273] (void-slam-dolly) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.884049] (-) TimerEvent: {}
+[0.911258] (void-slam-dolly) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.912697] (void-slam-dolly) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.984456] (-) TimerEvent: {}
+[1.085631] (-) TimerEvent: {}
+[1.186200] (-) TimerEvent: {}
+[1.259625] (void-slam-dolly) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[1.287223] (-) TimerEvent: {}
+[1.388260] (-) TimerEvent: {}
+[1.489435] (-) TimerEvent: {}
+[1.503269] (void-slam-dolly) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.590319] (-) TimerEvent: {}
+[1.691696] (-) TimerEvent: {}
+[1.746188] (void-slam-dolly) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.757689] (void-slam-dolly) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.758107] (void-slam-dolly) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.758198] (void-slam-dolly) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.758709] (void-slam-dolly) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.758808] (void-slam-dolly) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.759324] (void-slam-dolly) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.759910] (void-slam-dolly) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.760414] (void-slam-dolly) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.771372] (void-slam-dolly) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.771761] (void-slam-dolly) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.772010] (void-slam-dolly) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.776467] (void-slam-dolly) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.792607] (-) TimerEvent: {}
+[1.841952] (void-slam-dolly) StdoutLine: {'line': b'-- Generating done\n'}
+[1.845275] (void-slam-dolly) StdoutLine: {'line': b'-- Build files have been written to: /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly\n'}
+[1.893190] (-) TimerEvent: {}
+[1.947306] (void-slam-dolly) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target moving_robot\x1b[0m\n'}
+[1.993909] (-) TimerEvent: {}
+[2.073045] (void-slam-dolly) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/moving_robot.dir/src/moving_robot.cpp.o\x1b[0m\n'}
+[2.094539] (-) TimerEvent: {}
+[2.195117] (-) TimerEvent: {}
+[2.296271] (-) TimerEvent: {}
+[2.397260] (-) TimerEvent: {}
+[2.497837] (-) TimerEvent: {}
+[2.598419] (-) TimerEvent: {}
+[2.699017] (-) TimerEvent: {}
+[2.799582] (-) TimerEvent: {}
+[2.900073] (-) TimerEvent: {}
+[3.000652] (-) TimerEvent: {}
+[3.101942] (-) TimerEvent: {}
+[3.202617] (-) TimerEvent: {}
+[3.303309] (-) TimerEvent: {}
+[3.404395] (-) TimerEvent: {}
+[3.505213] (-) TimerEvent: {}
+[3.605854] (-) TimerEvent: {}
+[3.706570] (-) TimerEvent: {}
+[3.807162] (-) TimerEvent: {}
+[3.907727] (-) TimerEvent: {}
+[4.008408] (-) TimerEvent: {}
+[4.109276] (-) TimerEvent: {}
+[4.211887] (-) TimerEvent: {}
+[4.312468] (-) TimerEvent: {}
+[4.412950] (-) TimerEvent: {}
+[4.513580] (-) TimerEvent: {}
+[4.614209] (-) TimerEvent: {}
+[4.714764] (-) TimerEvent: {}
+[4.815854] (-) TimerEvent: {}
+[4.916655] (-) TimerEvent: {}
+[5.017688] (-) TimerEvent: {}
+[5.118543] (-) TimerEvent: {}
+[5.219124] (-) TimerEvent: {}
+[5.320544] (-) TimerEvent: {}
+[5.421333] (-) TimerEvent: {}
+[5.522573] (-) TimerEvent: {}
+[5.623185] (-) TimerEvent: {}
+[5.729284] (-) TimerEvent: {}
+[5.829809] (-) TimerEvent: {}
+[5.930718] (-) TimerEvent: {}
+[6.033732] (-) TimerEvent: {}
+[6.134219] (-) TimerEvent: {}
+[6.234866] (-) TimerEvent: {}
+[6.335479] (-) TimerEvent: {}
+[6.436997] (-) TimerEvent: {}
+[6.537516] (-) TimerEvent: {}
+[6.638579] (-) TimerEvent: {}
+[6.739746] (-) TimerEvent: {}
+[6.840315] (-) TimerEvent: {}
+[6.941048] (-) TimerEvent: {}
+[7.041661] (-) TimerEvent: {}
+[7.142377] (-) TimerEvent: {}
+[7.243424] (-) TimerEvent: {}
+[7.344226] (-) TimerEvent: {}
+[7.445407] (-) TimerEvent: {}
+[7.546634] (-) TimerEvent: {}
+[7.647225] (-) TimerEvent: {}
+[7.748196] (-) TimerEvent: {}
+[7.848853] (-) TimerEvent: {}
+[7.949667] (-) TimerEvent: {}
+[8.050605] (-) TimerEvent: {}
+[8.152020] (-) TimerEvent: {}
+[8.253199] (-) TimerEvent: {}
+[8.354584] (-) TimerEvent: {}
+[8.455115] (-) TimerEvent: {}
+[8.555680] (-) TimerEvent: {}
+[8.656911] (-) TimerEvent: {}
+[8.758524] (-) TimerEvent: {}
+[8.859228] (-) TimerEvent: {}
+[8.959757] (-) TimerEvent: {}
+[9.060345] (-) TimerEvent: {}
+[9.161687] (-) TimerEvent: {}
+[9.262491] (-) TimerEvent: {}
+[9.363145] (-) TimerEvent: {}
+[9.463793] (-) TimerEvent: {}
+[9.564545] (-) TimerEvent: {}
+[9.665305] (-) TimerEvent: {}
+[9.765987] (-) TimerEvent: {}
+[9.866883] (-) TimerEvent: {}
+[9.967612] (-) TimerEvent: {}
+[10.069054] (-) TimerEvent: {}
+[10.170067] (-) TimerEvent: {}
+[10.270973] (-) TimerEvent: {}
+[10.372446] (-) TimerEvent: {}
+[10.473483] (-) TimerEvent: {}
+[10.578247] (-) TimerEvent: {}
+[10.679095] (-) TimerEvent: {}
+[10.780684] (-) TimerEvent: {}
+[10.883217] (-) TimerEvent: {}
+[10.984393] (-) TimerEvent: {}
+[11.085309] (-) TimerEvent: {}
+[11.185964] (-) TimerEvent: {}
+[11.287313] (-) TimerEvent: {}
+[11.388615] (-) TimerEvent: {}
+[11.489203] (-) TimerEvent: {}
+[11.591075] (-) TimerEvent: {}
+[11.694603] (-) TimerEvent: {}
+[11.796050] (-) TimerEvent: {}
+[11.898435] (-) TimerEvent: {}
+[12.004567] (-) TimerEvent: {}
+[12.105140] (-) TimerEvent: {}
+[12.205909] (-) TimerEvent: {}
+[12.307294] (-) TimerEvent: {}
+[12.410984] (-) TimerEvent: {}
+[12.511515] (-) TimerEvent: {}
+[12.612159] (-) TimerEvent: {}
+[12.712782] (-) TimerEvent: {}
+[12.814852] (-) TimerEvent: {}
+[12.916259] (-) TimerEvent: {}
+[13.018373] (-) TimerEvent: {}
+[13.119969] (-) TimerEvent: {}
+[13.160886] (void-slam-dolly) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable moving_robot\x1b[0m\n'}
+[13.220318] (-) TimerEvent: {}
+[13.321361] (-) TimerEvent: {}
+[13.421950] (-) TimerEvent: {}
+[13.523083] (-) TimerEvent: {}
+[13.623892] (-) TimerEvent: {}
+[13.724627] (-) TimerEvent: {}
+[13.730422] (void-slam-dolly) StdoutLine: {'line': b'[ 50%] Built target moving_robot\n'}
+[13.799548] (void-slam-dolly) StdoutLine: {'line': b'[100%] Built target reading_laser\n'}
+[13.825225] (-) TimerEvent: {}
+[13.861515] (void-slam-dolly) CommandEnded: {'returncode': 0}
+[13.926233] (-) TimerEvent: {}
+[13.952056] (void-slam-dolly) JobProgress: {'identifier': 'void-slam-dolly', 'progress': 'install'}
+[13.973854] (void-slam-dolly) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly'], 'cwd': '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'shubhambackup'), ('SSH_AGENT_PID', '1894'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shubhambackup'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1721'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shubhambackup'), ('JOURNAL_STREAM', '8:54895'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shubhambackup'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/shubhambackup/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shubhambackup/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1929,unix/ubuntu:/tmp/.ICE-unix/1929'), ('INVOCATION_ID', 'b3c10a1a92cb456f804f1ab6e1b7e1ed'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3ac38247_3b1f_44d2_9dcb_94715b886b8d'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[14.005090] (void-slam-dolly) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.013439] (void-slam-dolly) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.017918] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly//launch/dolly_launch.py\n'}
+[14.018589] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly//launch/reading_laser_launch.py\n'}
+[14.020002] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/lib/void-slam-dolly//reading_laser\n'}
+[14.020829] (void-slam-dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/lib/void-slam-dolly//moving_robot\n'}
+[14.026379] (-) TimerEvent: {}
+[14.067803] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/ament_index/resource_index/package_run_dependencies/void-slam-dolly\n'}
+[14.068148] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/ament_index/resource_index/parent_prefix_path/void-slam-dolly\n'}
+[14.069743] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/ament_prefix_path.sh\n'}
+[14.069911] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/ament_prefix_path.dsv\n'}
+[14.072129] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/path.sh\n'}
+[14.072488] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/environment/path.dsv\n'}
+[14.072671] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.bash\n'}
+[14.072784] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.sh\n'}
+[14.072856] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.zsh\n'}
+[14.073849] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/local_setup.dsv\n'}
+[14.074276] (void-slam-dolly) StdoutLine: {'line': b'-- Symlinking: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.dsv\n'}
+[14.110106] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/ament_index/resource_index/packages/void-slam-dolly\n'}
+[14.113026] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/cmake/void-slam-dollyConfig.cmake\n'}
+[14.113314] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/cmake/void-slam-dollyConfig-version.cmake\n'}
+[14.114210] (void-slam-dolly) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shubhambackup/void-slam-toolbox/install/void-slam-dolly/share/void-slam-dolly/package.xml\n'}
+[14.119130] (void-slam-dolly) CommandEnded: {'returncode': 0}
+[14.126855] (-) TimerEvent: {}
+[14.228681] (-) TimerEvent: {}
+[14.331669] (-) TimerEvent: {}
+[14.336709] (void-slam-dolly) JobEnded: {'identifier': 'void-slam-dolly', 'rc': 0}
+[14.338681] (-) EventReactorShutdown: {}

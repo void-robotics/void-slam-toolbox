@@ -1,0 +1,39 @@
+[0.037s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[0.146s] [35m[1mScanning dependencies of target obstacle_avoidance[0m
+[0.187s] [ 33%] Built target moving_robot
+[0.211s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle_avoidance.dir/src/obstacle_avoidance.cpp.o[0m
+[0.270s] [ 83%] Built target reading_laser
+[2.340s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:69:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.341s]    69 | [01;31m[K}[m[K
+[2.341s]       | [01;31m[K^[m[K
+[2.341s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:8:47:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.341s]     8 | class ObstacleAvoidance : public rclcpp::Node [01;36m[K{[m[K
+[2.341s]       |                                               [01;36m[K^[m[K
+[2.347s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:[m[K In constructor ‘[01m[KObstacleAvoidance::ObstacleAvoidance()[m[K’:
+[2.347s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+[2.347s]    14 |     [01;31m[Ksubscription_[m[K = this->create_subscription<sensor_msgs::msg::LaserScan>(
+[2.347s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[2.347s]       |     [32m[Krcl_subscription_t[m[K
+[2.379s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:20:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[2.379s]    20 |     [01;31m[Kpublisher_[m[K =
+[2.379s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.380s]       |     [32m[Krcl_publisher_t[m[K
+[2.387s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:[m[K In member function ‘[01m[Kvoid ObstacleAvoidance::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.387s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:39:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ObstacleAvoidance[m[K’ has no member named ‘[01m[KcalculateVelMsg[m[K’
+[2.388s]    39 |     auto message = this->[01;31m[KcalculateVelMsg[m[K(min_dist);
+[2.388s]       |                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.393s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[2.393s]    40 |     [01;31m[Kpublisher_[m[K->publish(message);
+[2.393s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.393s]       |     [32m[Krcl_publisher_t[m[K
+[2.393s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:42:60:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[2.393s]    42 |  geometry_msgs::msg::Twist calculateVelMsg(float distance) [01;31m[K{[m[K
+[2.394s]       |                                                            [01;31m[K^[m[K
+[2.410s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:[m[K At global scope:
+[2.411s] [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/obstacle_avoidance.cpp:69:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[2.411s]    69 | [01;31m[K}[m[K
+[2.411s]       | [01;31m[K^[m[K
+[4.670s] make[2]: *** [CMakeFiles/obstacle_avoidance.dir/build.make:63: CMakeFiles/obstacle_avoidance.dir/src/obstacle_avoidance.cpp.o] Error 1
+[4.671s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/obstacle_avoidance.dir/all] Error 2
+[4.671s] make: *** [Makefile:141: all] Error 2
+[4.679s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4

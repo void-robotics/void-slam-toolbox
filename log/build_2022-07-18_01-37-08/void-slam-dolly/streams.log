@@ -1,0 +1,24 @@
+[0.080s] Invoking command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4
+[0.245s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.360s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.142s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.177s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.275s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.281s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.588s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.699s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.702s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.032s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.253s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.487s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake:67 (message):
+[2.487s]   ament_cmake_symlink_install_targets() 'moving_robot' is not a target
+[2.487s] Call Stack (most recent call first):
+[2.487s]   /opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/install.cmake:37 (ament_cmake_symlink_install_targets)
+[2.488s]   CMakeLists.txt:49 (install)
+[2.488s] 
+[2.488s] 
+[2.495s] -- Configuring incomplete, errors occurred!
+[2.496s] See also "/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly/CMakeFiles/CMakeOutput.log".
+[2.496s] See also "/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly/CMakeFiles/CMakeError.log".
+[2.534s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[2.541s] Invoked command in '/home/shubhambackup/void-slam-toolbox/build/void-slam-dolly' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shubhambackup/void-slam-toolbox/build/void-slam-dolly -- -j4 -l4

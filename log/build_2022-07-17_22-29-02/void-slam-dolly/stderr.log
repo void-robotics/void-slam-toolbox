@@ -1,0 +1,85 @@
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:16:76:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K#[m[K’ in program
+   16 |  void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr _msg) {  [01;31m[K#[m[K _msg is the variable consisting the shared Pointer
+      |                                                                            [01;31m[K^[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:21:36:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::LaserScan[m[K’?
+   21 |  rclcpp::Subscription<sensor_msgs::[01;31m[KLaserScan[m[K>::SharedPtr subscription_;
+      |                                    [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/sensor_msgs/msg/laser_scan.hpp:7[m[K,
+                 from [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:2[m[K:
+[01m[K/opt/ros/foxy/include/sensor_msgs/msg/detail/laser_scan__struct.hpp:246:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::LaserScan[m[K’ declared here
+  246 | using [01;36m[KLaserScan[m[K =
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:21:36:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::LaserScan[m[K’?
+   21 |  rclcpp::Subscription<sensor_msgs::[01;31m[KLaserScan[m[K>::SharedPtr subscription_;
+      |                                    [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/sensor_msgs/msg/laser_scan.hpp:7[m[K,
+                 from [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:2[m[K:
+[01m[K/opt/ros/foxy/include/sensor_msgs/msg/detail/laser_scan__struct.hpp:246:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::LaserScan[m[K’ declared here
+  246 | using [01;36m[KLaserScan[m[K =
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:21:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |  rclcpp::Subscription<sensor_msgs::LaserScan[01;31m[K>[m[K::SharedPtr subscription_;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:21:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:21:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   21 |  rclcpp::Subscription<sensor_msgs::LaserScan>::[01;31m[KSharedPtr[m[K subscription_;
+      |                                                [01;31m[K^~~~~~~~~[m[K
+      |                                                         [32m[K;[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:21:58:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+   21 |  rclcpp::Subscription<sensor_msgs::LaserScan>::SharedPtr [01;31m[Ksubscription_[m[K;
+      |                                                          [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                          [32m[Krcl_subscription_t[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:23:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   23 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:[m[K In constructor ‘[01m[KReadingLaser::ReadingLaser()[m[K’:
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:9:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+    9 |   [01;31m[Ksubscription[m[K = this->create_subscription<sensor_msgs::LaserScan>(
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+      |   [32m[Krcl_subscription_t[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:9:57:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::LaserScan[m[K’?
+    9 |   subscription = this->create_subscription<sensor_msgs::[01;31m[KLaserScan[m[K>(
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/sensor_msgs/msg/laser_scan.hpp:7[m[K,
+                 from [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:2[m[K:
+[01m[K/opt/ros/foxy/include/sensor_msgs/msg/detail/laser_scan__struct.hpp:246:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::LaserScan[m[K’ declared here
+  246 | using [01;36m[KLaserScan[m[K =
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:9:57:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::LaserScan[m[K’?
+    9 |   subscription = this->create_subscription<sensor_msgs::[01;31m[KLaserScan[m[K>(
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/sensor_msgs/msg/laser_scan.hpp:7[m[K,
+                 from [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:2[m[K:
+[01m[K/opt/ros/foxy/include/sensor_msgs/msg/detail/laser_scan__struct.hpp:246:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::LaserScan[m[K’ declared here
+  246 | using [01;36m[KLaserScan[m[K =
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:11:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KReadingLaser::create_subscription<<expression error> >(const char [11], rclcpp::QoS&, std::_Bind_helper<false, void (ReadingLaser::*)(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void> > >), ReadingLaser*, int>::type)[m[K’
+   11 |    std::bind(&ReadingLaser::topic_callback,  this, 1)[01;31m[K)[m[K;
+      |                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  213 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:11:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   11 |    std::bind(&ReadingLaser::topic_callback,  this, 1)[01;31m[K)[m[K;
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:[m[K In member function ‘[01m[Kvoid ReadingLaser::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:16:82:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kis[m[K’
+   16 |  void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr _msg) {  # _msg[01;31m[K [m[K[32m[Kis[m[K the variable consisting the shared Pointer
+      |                                                                                  [01;31m[K^[m[K[32m[K~~[m[K
+      |                                                                                  [32m[K;[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:16:78:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+   16 |  void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr _msg) {  # [01;35m[K_msg[m[K is the variable consisting the shared Pointer
+      |                                                                              [01;35m[K^~~~[m[K
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/shubhambackup/void-slam-toolbox/src/void-slam-dolly/src/reading_laser.cpp:31:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Krclcpp[m[K’
+   31 |  [01;31m[Krclcpp[m[K::spin(node);
+      |  [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/reading_laser.dir/build.make:63: CMakeFiles/reading_laser.dir/src/reading_laser.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/reading_laser.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
